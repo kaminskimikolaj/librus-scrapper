@@ -1,0 +1,43 @@
+ --cookie-jar cookie.txt --cookie cookie.txt
+
+1.
+curl -H 'Host: portal.librus.pl' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36' -H 'Sec-Fetch-Dest: document' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' -H 'Sec-Fetch-Site: none' -H 'Sec-Fetch-Mode: navigate' -H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8' --compressed 'https://portal.librus.pl/rodzina' --cookie-jar cookie.txt --cookie cookie.txt -v
+
+2.
+curl -H 'Host: portal.librus.pl' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36' -H 'Sec-Fetch-Dest: document' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' -H 'Sec-Fetch-Site: same-origin' -H 'Sec-Fetch-Mode: navigate' -H 'Sec-Fetch-User: ?1' -H 'Referer: https://portal.librus.pl/rodzina' -H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8' --compressed 'https://portal.librus.pl/rodzina/synergia/loguj' --cookie-jar cookie.txt --cookie cookie.txt -v | grep portalRodzina?v=
+
+3.
+curl -H 'Host: synergia.librus.pl' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36' -H 'Sec-Fetch-Dest: iframe' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' -H 'Sec-Fetch-Site: same-site' -H 'Sec-Fetch-Mode: navigate' -H 'Referer: https://portal.librus.pl/rodzina/synergia/loguj' -H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8' --compressed 'https://synergia.librus.pl/loguj/portalRodzina?v=1586454194' --cookie-jar cookie.txt --cookie cookie.txt -v
+
+4.
+curl -H 'Host: api.librus.pl' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36' -H 'Sec-Fetch-Dest: iframe' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' -H 'Sec-Fetch-Site: same-site' -H 'Sec-Fetch-Mode: navigate' -H 'Referer: https://portal.librus.pl/rodzina/synergia/loguj' -H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8' --compressed 'https://api.librus.pl/OAuth/Authorization?client_id=46&response_type=code&scope=mydata' --cookie-jar cookie.txt --cookie cookie.txt -v
+
+5.
+curl -H 'Host: api.librus.pl' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36' -H 'Sec-Fetch-Dest: iframe' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' -H 'Sec-Fetch-Site: same-site' -H 'Sec-Fetch-Mode: navigate' -H 'Referer: https://portal.librus.pl/rodzina/synergia/loguj' -H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8' --compressed 'https://api.librus.pl/OAuth/Authorization?client_id=46' --cookie-jar cookie.txt --cookie cookie.txt -v
+
+7.
+curl -H 'Host: api.librus.pl' -H 'Accept: */*' -H 'Sec-Fetch-Dest: empty' -H 'X-Requested-With: XMLHttpRequest' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36' -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' -H 'Origin: https://api.librus.pl' -H 'Sec-Fetch-Site: same-origin' -H 'Sec-Fetch-Mode: cors' -H 'Referer: https://api.librus.pl/OAuth/Authorization?client_id=46' -H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8' --data-binary "username=5426828u&is_needed=1" --compressed 'https://api.librus.pl/OAuth/Captcha' --cookie-jar cookie.txt --cookie cookie.txt -v
+
+8.
+curl -H 'Host: api.librus.pl' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Sec-Fetch-Dest: empty' -H 'X-Requested-With: XMLHttpRequest' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36' -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' -H 'Origin: https://api.librus.pl' -H 'Sec-Fetch-Site: same-origin' -H 'Sec-Fetch-Mode: cors' -H 'Referer: https://api.librus.pl/OAuth/Authorization?client_id=46' -H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8' --data-binary "action=login&login=5426828u&pass=JebacLibrus69" --compressed 'https://api.librus.pl/OAuth/Authorization?client_id=46' --cookie-jar cookie.txt --cookie cookie.txt -v
+
+9.
+curl -H 'Host: api.librus.pl' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36' -H 'Sec-Fetch-Dest: iframe' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' -H 'Sec-Fetch-Site: same-origin' -H 'Sec-Fetch-Mode: navigate' -H 'Sec-Fetch-User: ?1' -H 'Referer: https://api.librus.pl/OAuth/Authorization?client_id=46' -H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8' --compressed 'https://api.librus.pl/OAuth/Authorization/Grant?client_id=46' --cookie-jar cookie.txt --cookie cookie.txt -v
+
+10. **
+curl -H 'Host: synergia.librus.pl' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36' -H 'Sec-Fetch-Dest: iframe' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' -H 'Sec-Fetch-Site: same-site' -H 'Sec-Fetch-Mode: navigate' -H 'Sec-Fetch-User: ?1' -H 'Referer: https://api.librus.pl/OAuth/Authorization?client_id=46' -H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8' --compressed 'https://synergia.librus.pl/loguj/portalRodzina?code=4NMhtdC%2FSu3qkHNX3J7RSRWaFgrczlpNc%2BevQz%2Fr73bsyOXc3zzAAitd1lPn14PGE%2BQ5U1H8BNb6dFQl90K8dsFDw5f6f%2B93ZhafcCHQxC0%2FS%2F6UQOduLIjG2%2F7quD1ydcwSE%233sBNqJ9eeno%3D' --cookie-jar cookie.txt --cookie cookie.txt -v
+
+11.
+curl 'https://synergia.librus.pl/uczen/index' \
+-H 'Upgrade-Insecure-Requests: 1' \
+-H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+-H 'Sec-Fetch-Dest: document' \
+-H 'Connection: keep-alive' \
+-H 'Referer: https://portal.librus.pl/rodzina/synergia/loguj' \
+-H 'Sec-Fetch-Mode: navigate' \
+-H 'Sec-Fetch-User: ?1' \
+-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36' \
+-H 'Host: synergia.librus.pl' \
+-H 'Sec-Fetch-Site: same-site' \
+-H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8' \
+--cookie-jar cookie.txt --cookie cookie.txt -v

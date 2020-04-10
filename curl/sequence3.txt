@@ -1,0 +1,19 @@
+1.
+curl 'https://portal.librus.pl/rodzina' \
+-H 'Sec-Fetch-Site: none' \
+-H 'Sec-Fetch-Dest: document' \
+-H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+-H 'Sec-Fetch-User: ?1' \
+-H 'Connection: keep-alive' \
+-H 'Sec-Fetch-Mode: navigate' \
+-H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8' \
+-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36' \
+-H 'Cache-Control: max-age=0' \
+-H 'Upgrade-Insecure-Requests: 1' \
+-H 'Host: portal.librus.pl' \
+--cookie 'device_identifier=eyJpdiI6IlltVlV3Q1ZOZFwvRWZyUUw1SUxIQ21nPT0iLCJ2YWx1ZSI6IkJPaCtFZzZyZjNjeGo5VHA5dDFPQVE9PSIsIm1hYyI6ImI3NjRhZjBmMjZmNDY4ODAxMzYzM2YxMDJlMzc1YjFmN2E4OTE1ZTlkZWVmZTY3YjdkZmNlYTMzYjc3Yjc5NjIifQ%3D%3D; _ga=GA1.3.1482977188.1586372707; _gid=GA1.3.143513246.1586372707; XSRF-TOKEN=eyJpdiI6InE2Y0picWNKVURndHhHTXIxZjFMQ0E9PSIsInZhbHVlIjoiNmI3RDlcL3k2UFQ4aGVhUlF4em1VUkprWHNTKzlBWXVUV2xKMUtvUDI2ZjkxTGJDUEVkZ05Bd2tYb3pQekJnNkQiLCJtYWMiOiJhNzI5MDc4YTFhOGRkNzdlN2JhZDRmYTMyYmYyMTIwN2NhMTEyNDlmYjg5NmFiMTI1OGRlOTgwNmU0OGJjYzQ0In0%3D; portal_librus_session=eyJpdiI6IkpZQ3ZvWEI3SE5RVnNVa0JTbTlqeXc9PSIsInZhbHVlIjoiNEtsNmQ5anFWVDBcL1FTazZnT2ZNOTdrUllUUWpcL1ZDd2JBTTE5MnMzTDJvelM2V3lPcTZSeFEwXC9VRWx5Z0Q5SSIsIm1hYyI6ImZhOWQ0NGFkZjc1YmFiMTRmYzkxYzQ0M2EwMTczYWRjNmIzNjI4MmU4OGU4MTdiMzkyYjIxOTNlNjc3YTQyZmQifQ%3D%3D; zIUcJAltLnf3eEJDTIZf5oz63qml2YU643iRD0Jk=eyJpdiI6IlY4cUlpc1JCYzdcL3N0NEpHM25FQnJ3PT0iLCJ2YWx1ZSI6IjN2Vkt0Y3NPQWhhXC8yMHl5MndYOWNpdVVpNnVQdWF0bmxuRnhvQ01qc1d4cHJzZWo1ZFJlS0NiaGs1WDlaVGlKZ2U1WEtXOFwvZTVqUEVLeHNmanc0dTl3Sk90V3prMnV1V2xrbGduaGpYaWxOMVV4XC84OTR2dUVIdGYxU1ZGWm1PeE1FODBnSXRLMVNEZCt0ZVB4R1FsYWpaWnFFazNPQ0lJYU5PVEFzY2hwampoUE9HNjJXbjdrS2J3WlJSczJUb2tpaDdWUXVsQjVIa3UySWtITVl4QUZZb2lrRUR0NFZ4M2F4VnhKaWVkRTFKY21IWW9hc2pDZUxkM0kxekU3N1UxRHR2VncyZEdtUjdkaEZcL0QxUnEwcThlbFd6UERwZDBcL1lPeENiYVo2d2xFRVFmbkY4VkplNE1XV01OQnZKUndzRnNjQ0t3U2lFdGJmYnZPUWxXRHJBPT0iLCJtYWMiOiIwYjQ3Y2VlNjc0NmE2ZWVkNDhlMjg5ODU2N2Y3NzEwMThlNWEzMGZiOWQ5NzA4MjM2Nzc3ZGQzNTk4YzFmYTExIn0%3D' \
+--proxy http://localhost:9090
+
+[set cookie random:random]
+
+2.

@@ -1,0 +1,33 @@
+ --cookie-jar cookie.txt --cookie cookie.txt
+-x "localhost:9090"
+-H 'Connection: keep-alive'
+
+1.
+curl -H 'Connection: close' 'https://portal.librus.pl/rodzina' --cookie-jar cookie.txt --cookie cookie.txt -v -x "localhost:9090"
+
+2.
+curl -H 'Connection: close' -H 'Referer: https://portal.librus.pl/rodzina' 'https://portal.librus.pl/rodzina/synergia/loguj' --cookie-jar cookie.txt --cookie cookie.txt -v -x "localhost:9090" | grep portalRodzina?v=
+
+3.
+curl -H 'Connection: close' -H 'Referer: https://portal.librus.pl/rodzina/synergia/loguj' 'https://synergia.librus.pl/loguj/portalRodzina?v=1586470553' --cookie-jar cookie.txt --cookie cookie.txt -v -x "localhost:9090"
+
+4.
+curl -H 'Connection: close' -H 'Referer: https://portal.librus.pl/rodzina/synergia/loguj' 'https://api.librus.pl/OAuth/Authorization?client_id=46&response_type=code&scope=mydata' --cookie-jar cookie.txt --cookie cookie.txt -v -x "localhost:9090"
+
+5.
+curl -H 'Connection: close' -H 'Referer: https://portal.librus.pl/rodzina/synergia/loguj' 'https://api.librus.pl/OAuth/Authorization?client_id=46' --cookie-jar cookie.txt --cookie cookie.txt -v -x "localhost:9090"
+
+6.
+curl -H 'Connection: close' -H 'Referer: https://api.librus.pl/OAuth/Authorization?client_id=46' --data-binary "username=5426828u&is_needed=1" 'https://api.librus.pl/OAuth/Captcha' --cookie-jar cookie.txt --cookie cookie.txt -v -x "localhost:9090"
+
+7.
+curl -H 'Connection: close' -H 'Referer: https://api.librus.pl/OAuth/Authorization?client_id=46' --data-binary "action=login&login=5426828u&pass=JebacLibrus69" --compressed 'https://api.librus.pl/OAuth/Authorization?client_id=46' --cookie-jar cookie.txt --cookie cookie.txt -v -x "localhost:9090"
+
+8.
+curl -H 'Connection: close' -H 'Referer: https://api.librus.pl/OAuth/Authorization?client_id=46' 'https://api.librus.pl/OAuth/Authorization/Grant?client_id=46' --cookie-jar cookie.txt --cookie cookie.txt -v -x "localhost:9090"
+
+9. **
+curl -H 'Connection: close' -H 'Referer: https://api.librus.pl/OAuth/Authorization?client_id=46' 'https://synergia.librus.pl/loguj/portalRodzina?code=4oVUdZwatdqsBQ92qAtz8hRi8pWLJOtPeTDtHd1JazFStr1JZN69INppm5W%2BD%2BewTn6QXz2Vh6Rj6AyDHrg%2BvOlWifQAztT6%2BdwyotDALSBxbKYGe9EQ4gbqVQ09Kl13qlte9%23oNQ2%2Bz61U5A%3D' --cookie-jar cookie.txt --cookie cookie.txt -v -x "localhost:9090"
+
+10.
+curl -H 'Connection: close' 'https://synergia.librus.pl/uczen/index' -H 'Referer: https://portal.librus.pl/rodzina/synergia/loguj' --cookie-jar cookie.txt --cookie cookie.txt -v -x "localhost:9090"

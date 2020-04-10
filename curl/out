@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+    <meta name="csrf-token" content="lcuRM7EDoUdUfCBRWkofEgYT1CRHoA0vaqYaWYIg">
+    <link rel="shortcut icon" type="image/png" href="https://portal.librus.pl/images/icon.png"/>
+            <title>Portal LIBRUS Rodzina</title>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-123891895-1', {'sampleRate': 1});
+    ga('send', 'pageview');
+</script>    <link href="/css/app.css?id=38599125251f9b26c1cf" rel="stylesheet">
+</head>
+<body class="portal-rodzina  " >
+            <section class="app-download clearfix" id="app-download">
+    <div class="container-fluid app-download__container">
+        <header class="app-download__header">
+            <div class="app-download__logo">
+                <i class="icon-logo-mobile-img"></i>
+            </div>
+            <div class="app-download__meta">
+                <h3 class="app-download__title">Librus</h3>
+                <p class="app-download__slogan">Oficjalna aplikacja Librus</p>
+            </div>
+        </header>
+        <div class="app-download__link">
+            <a class="btn btn-primary app-download__btn" href="https://synergia.librus.pl/aplikacjemobilne#pobierz" target="_blank">Pobierz bezpłatnie</a>
+        </div>
+    </div>
+</section>
+    <nav class="navbar navbar--app-bar">
+    <div class="container-fluid">
+        <div class="navbar__left">
+            <a class="navbar-brand text-white" href="/rodzina">
+                <i class="icon icon-logo-rodzina navbar__logo"></i>
+            </a>
+            <div class="container-button">
+                <div class="search">
+                    <form class="search-form" method="get" action="/rodzina/artykuly" autocomplete="off">
+                        <input class="search-input" type="text" placeholder="Szukaj" name="name" id="archive-search" value="">
+                        <button type="submit" class="search-button">
+                            <i class="zmdi zmdi-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="navbar-small-menu">
+                    <a class="btn btn-green btn-navbar" href="https://konto.librus.pl/sklep" target="_blank">Sklep</a>
+                    <a class="btn btn-primary btn-navbar" href="/szkola">Librus Szkoła</a>
+                    <a class="btn btn-third btn-synergia-top btn-navbar dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon icon-logo-synergia btn-synergia__icon"></i> LIBRUS Synergia
+                    </a>
+                    <div class="dropdown-menu dropdown-menu--wide dropdown-menu--gray">
+                        <a class="dropdown-item dropdown-item--synergia" href="https://www.librus.pl/szkoly/systemy/librus-synergia/dzial-faq/" target="_blank">
+                            <i class="zmdi zmdi-help dropdown-item__icon"></i>
+                            Pomoc
+                        </a>
+                        <a class="dropdown-item dropdown-item--synergia" href="/rodzina/synergia/loguj">
+                            <i class="zmdi zmdi-account dropdown-item__icon"></i>
+                            Zaloguj
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-separator"></div>
+        <div class="navbar__right">
+            <div class="navbar__status">
+                Konto LIBRUS:
+                                    niezalogowany
+                            </div>
+            <div class="navbar_menu">
+                                                            <div>
+                            <a href="#" class="dropdown__icon dropdown__icon--notices" id="dropdownNoticesButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                             
+                                onclick="ga('send', 'event', 'menu_gorne', 'click', 'ogloszenia');"
+                            >
+                                <i class="zmdi zmdi-comment-alert"></i>
+                            </a>
+                            <div id="dropdown-menu--notices" class="dropdown-menu dropdown-menu--wide dropdown-menu--top dropdown-menu--notices"  data-toggle="toggle" aria-labelledby="dropdownTopRightMenuButton">
+    <a class="notices__header" href="/rodzina/ogloszenia/">
+        Ogłoszenia
+    </a>
+    <div id="notices-content" class="notices__content">
+                    <div class="notices__empty">Brak ogłoszeń</div>
+            </div>
+    <div class="notices__footer ">
+        <a href="#" class="notices__close" id="dropdownNoticesClose">Zamknij</a>
+    </div>
+</div>                        </div>
+                                                    <div>
+                    <a href="#" class="dropdown__icon dropdown__icon--account display-none" 
+                                id="dropdownTopRightMenuButton" role="button" data-toggle="dropdown" 
+                                aria-haspopup="true" aria-expanded="false">
+                        <i class="zmdi zmdi-more-vert"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu--wide dropdown-menu--top">
+                        <div class="dropdown__account">
+                            <div class="dropdown-item--login-status d-lg-none">
+                                Konto LIBRUS:<br/>
+                                <span>
+                                                                            niezalogowany
+                                                                    </span>
+                            </div>
+                                                                                        <a class="dropdown-item dropdown-item--white" href="https://portal.librus.pl/rodzina/login">
+                                    <i class="zmdi zmdi-power dropdown-item__icon"></i>
+                                    Zaloguj
+                                </a>
+                                                            <a class="dropdown-item dropdown-item--white d-lg-none" href="https://konto.librus.pl" target="_blank">
+                                    <i class="icon icon-heart dropdown-item__icon"></i>
+                                    Dlaczego warto
+                                </a>
+                                                        <a class="dropdown-item dropdown-item--white font-weight-medium dropdown-separator d-lg-none" href="https://konto.librus.pl/sklep" target="_blank">
+                                <i class="zmdi zmdi-shopping-cart dropdown-item__icon"></i>
+                                Sklep
+                            </a>
+                            <a class="dropdown-item dropdown-item--white font-weight-medium d-lg-none" href="/szkola">
+                                <i class="zmdi zmdi-graduation-cap dropdown-item__icon"></i>
+                                Librus Szkoła
+                            </a>
+                            <a class="dropdown-item dropdown-item--white btn-synergia btn-synergia--rodzina font-weight-medium dropdown-toggle d-lg-none show" id="dropdownSynergiaMenuButton" href="#">
+                                <i class="icon icon-logo-synergia dropdown-item__icon btn-synergia__icon"></i> LIBRUS Synergia
+                            </a>
+                            <div class="dropdown-menu dropdown-menu--wide dropdown-menu--gray dropdown-menu--inside d-lg-none show" id="dropdownSynergiaMenu" aria-labelledby="dropdownSynergiaMenuButton">
+                                <a class="dropdown-item dropdown-item--synergia" href="https://www.librus.pl/szkoly/systemy/librus-synergia/dzial-faq/" target="_blank">
+                                    <i class="zmdi zmdi-help dropdown-item__icon"></i>
+                                    Pomoc
+                                </a>
+                                <a class="dropdown-item dropdown-item--synergia" href="/rodzina/synergia/loguj">
+                                    <i class="zmdi zmdi-account dropdown-item__icon"></i>
+                                    Zaloguj
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+</nav>    <main>
+    <article>
+                    <div class="container-main container-main--home">
+            <div class="article-list">
+                <photo-link more="margin-bottom: 39px;min-height: 100px; width: 100%"
+                            tag="double-billboard-rodzina"
+                            media-width="991"
+                                                        more-mobile="width: 100%"
+                            :refresh-time="5"
+                            base-param="{&quot;image_url_big&quot;:&quot;https:\/\/portal.librus.pl\/images\/base\/indywidualnipl.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/portal.librus.pl\/images\/base\/indywidualnipl_mobile.jpg&quot;,&quot;click_url&quot;:&quot;https:\/\/indywidualni.pl&quot;,&quot;click_url_small&quot;:&quot;https:\/\/indywidualni.pl&quot;}"
+                            preview=""
+                ></photo-link>
+                <div class="row">
+                                            <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1712"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Ograniczenia funkcjonowania szkół przedłużone', 1712);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/articles/00pic/20/04/09/librus/a_zdalna_km_LS.jpg">
+                                                        <img src="https://files.librus.pl/articles/00pic/20/04/09/librus/a_zdalna_kd_LS.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#szkoła</div>
+                                                        </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">Ograniczenia funkcjonowania szkół przedłużone</span>
+                        <span class="article__category--mobile d-lg-none">#szkoła</span>
+                    </p>
+                    </a>
+</div>                                            <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1709"
+                        onclick="ga('send', 'event', 'artykul', 'click', '[RAPORT] Jak wygląda nauczanie zdalne w naszych domach', 1709);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/articles/00pic/20/04/09/librus/a_librus_raport_nauka_zdalna_LS_LR_km_2.jpg">
+                                                        <img src="https://files.librus.pl/articles/00pic/20/04/09/librus/a_librus_raport_nauka_zdalna_LS_LR_kd_2.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#raport</div>
+                                                        </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">[RAPORT] Jak wygląda nauczanie zdalne w naszych domach</span>
+                        <span class="article__category--mobile d-lg-none">#raport</span>
+                    </p>
+                    </a>
+</div>                                            <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1701"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'LIBRUS Synergia idzie na rekord', 1701);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/articles/00pic/20/04/07/librus/a_librus_rekord_km.jpg">
+                                                        <img src="https://files.librus.pl/articles/00pic/20/04/07/librus/a_librus_rekord_kd.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#librus</div>
+                                                        </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">LIBRUS Synergia idzie na rekord</span>
+                        <span class="article__category--mobile d-lg-none">#librus</span>
+                    </p>
+                    </a>
+</div>                                    </div>
+                <div class="row">
+                    <div class="article__container article__container--large">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1696"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Nauka zdalna – wspieraj, pozwól zrozumieć, nie wyręczaj!', 1696);"
+        >
+                <div class="article__image-container article__image-container--large">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                        <img src="https://files.librus.pl/articles/00pic/20/04/03/librus/idw/a_idw_kd_LR.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#uczenie się</div>
+                                            <p class="article__title">
+                            <span class="inner-title">
+                                Nauka zdalna – wspieraj, pozwól zrozumieć, nie wyręczaj!
+                            </span>
+                        </p>
+                                                        </div>
+            </div>
+                    </a>
+</div>                    <photo-link more="width: 300px;height: 250px;margin-bottom: 20px"
+                                tag="rectangle-rodzina"
+                                media-width="991"
+                                                                more-mobile="width: 100%;height: auto"
+                                :refresh-time="5"
+                                base-param="{&quot;image_url_big&quot;:&quot;https:\/\/portal.librus.pl\/images\/base\/aplikacjamobilna.jpg&quot;,&quot;image_url_small&quot;:&quot;https:\/\/portal.librus.pl\/images\/base\/aplikacjamobilna_mobile.jpg&quot;,&quot;click_url&quot;:&quot;http:\/\/konto.librus.pl\/aplikacjamobilna&quot;,&quot;click_url_small&quot;:&quot;http:\/\/konto.librus.pl\/aplikacjamobilna&quot;}"
+                                preview=""
+                    ></photo-link>
+                </div>
+                <div class="row">
+                                                                        <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1691"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Organizacja wideolekcji w Synergii i aplikacji Librus', 1691);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/articles/00pic/20/04/02/librus/wideolekcje/a_spotkania_online_ru_km_LR.jpg">
+                                                        <img src="https://files.librus.pl/articles/00pic/20/04/02/librus/wideolekcje/a_spotkania_online_ru_kd_LR.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#poznaj synergię</div>
+                                                        </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">Organizacja wideolekcji w Synergii i aplikacji Librus</span>
+                        <span class="article__category--mobile d-lg-none">#poznaj synergię</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1687"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Załączniki w Zadaniach domowych – teraz w aplikacji mobilnej', 1687);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/articles/00pic/20/04/02/librus/zadania/a_aplikacja_zad_domowe_420_km_LR.jpg">
+                                                        <img src="https://files.librus.pl/articles/00pic/20/04/02/librus/zadania/a_aplikacja_zad_domowe_420_kd_LR.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#aplikacja Librus</div>
+                                                        </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">Załączniki w Zadaniach domowych – teraz w aplikacji mobilnej</span>
+                        <span class="article__category--mobile d-lg-none">#aplikacja Librus</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1680"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Dlaczego warto pozwolić dziecku na to, by płakało', 1680);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/articles/27032020/librus/placz/a_pozwolic_na_placz_km_LR.jpg">
+                                                        <img src="https://files.librus.pl/articles/27032020/librus/placz/a_pozwolic_na_placz_kd_LR.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#psychologia</div>
+                                                        </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">Dlaczego warto pozwolić dziecku na to, by płakało</span>
+                        <span class="article__category--mobile d-lg-none">#psychologia</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1676"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Jak zalogować się do aplikacji mobilnej Librus?', 1676);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://portal.librus.pl/pic/20190902/tele/a_instrukcja_km_LR.jpg">
+                                                        <img src="https://portal.librus.pl/pic/20190902/tele/a_instrukcja_kd_LR_2.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#aplikacja Librus</div>
+                                                        </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">Jak zalogować się do aplikacji mobilnej Librus?</span>
+                        <span class="article__category--mobile d-lg-none">#aplikacja Librus</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1670"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Być rodzicem w czasie kwarantanny', 1670);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/articles/30032020/rodzickwa/a_rodzic_w_kwarantannie_km_LR.jpg">
+                                                        <img src="https://files.librus.pl/articles/30032020/rodzickwa/a_rodzic_w_kwarantannie_kd_LR.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#wychowanie</div>
+                                                        </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">Być rodzicem w czasie kwarantanny</span>
+                        <span class="article__category--mobile d-lg-none">#wychowanie</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1666"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Próbny egzamin maturalny - informacje dla uczniów i rodziców', 1666);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/articles/27032020/librus/maturap/a_matura_probna_km_LR.jpg">
+                                                        <img src="https://files.librus.pl/articles/27032020/librus/maturap/a_matura_probna_kd_LR.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#matura</div>
+                                                        </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">Próbny egzamin maturalny - informacje dla uczniów i rodziców</span>
+                        <span class="article__category--mobile d-lg-none">#matura</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--medium">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1663"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Rodzicu! Uczniu! Odbędzie się próbny egzamin ósmoklasisty', 1663);"
+        >
+                <div class="article__image-container article__image-container--medium">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                        <img src="https://files.librus.pl/articles/27032020/librus/egzamin8/a_egzamin8_kd_LR.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#egzaminy</div>
+                                            <p class="article__title">
+                            <span class="inner-title">
+                                Rodzicu! Uczniu! Odbędzie się próbny egzamin ósmoklasisty
+                            </span>
+                        </p>
+                                                        </div>
+            </div>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--medium">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1657"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'JESTEŚMY UWAŻNI – Kiedy z dzieckiem dzieje się coś złego', 1657);"
+        >
+                <div class="article__image-container article__image-container--medium">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                        <img src="https://files.librus.pl/articles/25032020/uwazni/a_pomoc_kd_LR.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#kampania społeczna</div>
+                                            <p class="article__title">
+                            <span class="inner-title">
+                                JESTEŚMY UWAŻNI – Kiedy z dzieckiem dzieje się coś złego
+                            </span>
+                        </p>
+                                                        </div>
+            </div>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1652"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Kalendarz pyleń – pobierz i zachowaj!', 1652);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/articles/18032020/librus/lr_kalendarz/a_kalendarz_pylen_km_LR.jpg">
+                                                        <img src="https://files.librus.pl/articles/18032020/librus/lr_kalendarz/a_kalendarz_pylen_kd_LR.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#ciekawostki</div>
+                                                        </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">Kalendarz pyleń – pobierz i zachowaj!</span>
+                        <span class="article__category--mobile d-lg-none">#ciekawostki</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1649"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'JESTEŚMY UWAŻNI – Zgrani czy z@grani? Technologie w rodzinie', 1649);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/articles/19032020/uwazni/a_Zgrani_km_LR.jpg">
+                                                        <img src="https://files.librus.pl/articles/19032020/uwazni/a_Zgrani_kd_LR.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#kampania społeczna</div>
+                                                        </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">JESTEŚMY UWAŻNI – Zgrani czy z@grani? Technologie w rodzinie</span>
+                        <span class="article__category--mobile d-lg-none">#kampania społeczna</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1647"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Egzaminy za pasem! Ucz się w domu ze Zdasz.to', 1647);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/images/16032020/wsip/a_wsip_km_LR_spp.png">
+                                                        <img src="https://files.librus.pl/images/16032020/wsip/a_wsip_kd_LR_spp.png"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#uczenie się</div>
+                                                                <div class="article__sponsored">Artykuł sponsorowany</div>
+                                    </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">Egzaminy za pasem! Ucz się w domu ze Zdasz.to</span>
+                        <span class="article__category--mobile d-lg-none">#uczenie się</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1640"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Nauka z domu - jak zaplanować dzień i nie zwariować', 1640);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/articles/23032020/librus/planowanie/a_nauka_w_domu_km_LR.jpg">
+                                                        <img src="https://files.librus.pl/articles/23032020/librus/planowanie/a_nauka_w_domu_kd_LR.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#wychowanie</div>
+                                                        </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">Nauka z domu - jak zaplanować dzień i nie zwariować</span>
+                        <span class="article__category--mobile d-lg-none">#wychowanie</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1638"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Czy nauka poza szkołą jest możliwa? WSiP udowadnia, że TAK!', 1638);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/images/16032020/wsip/a_wsip_km_LR_sp.jpg">
+                                                        <img src="https://files.librus.pl/images/16032020/wsip/a_wsip_kd_LR_sp.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#uczenie się</div>
+                                                                <div class="article__sponsored">Artykuł sponsorowany</div>
+                                    </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">Czy nauka poza szkołą jest możliwa? WSiP udowadnia, że TAK!</span>
+                        <span class="article__category--mobile d-lg-none">#uczenie się</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1633"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Google czy Microsoft? Co wybierają polskie szkoły', 1633);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/articles/19032020/librus/wybor/a_dyski_sieciowe_km_LS_LR.jpg">
+                                                        <img src="https://files.librus.pl/articles/19032020/librus/wybor/a_dyski_sieciowe_kd_LS_LR.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#technologia</div>
+                                                        </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">Google czy Microsoft? Co wybierają polskie szkoły</span>
+                        <span class="article__category--mobile d-lg-none">#technologia</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--medium">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1630"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Bezpłatne webinary powtórkowe z matematyki', 1630);"
+        >
+                <div class="article__image-container article__image-container--medium">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                        <img src="https://files.librus.pl/articles/19032020/webinaria/a_webinaria_kd_LR.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#uczenie się</div>
+                                            <p class="article__title">
+                            <span class="inner-title">
+                                Bezpłatne webinary powtórkowe z matematyki
+                            </span>
+                        </p>
+                                                        </div>
+            </div>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--medium">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1626"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Jak odsyłać zadania domowe w Synergii', 1626);"
+        >
+                <div class="article__image-container article__image-container--medium">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                        <img src="https://files.librus.pl/articles/17032020/zadaniadomowe/a_zadania_domowe_17032020_kd_LR.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#poznaj synergię</div>
+                                            <p class="article__title">
+                            <span class="inner-title">
+                                Jak odsyłać zadania domowe w Synergii
+                            </span>
+                        </p>
+                                                        </div>
+            </div>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1623"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'TVP VOD – edukacja i rozrywka dla całej rodziny bez wychodzenia z domu', 1623);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/images/18032020/tvp/a_tvp_vod_km_LR_LS.jpg">
+                                                        <img src="https://files.librus.pl/images/18032020/tvp/a_tvp_vod_kd_LR_LS.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#czas wolny</div>
+                                                                <div class="article__sponsored">Artykuł sponsorowany</div>
+                                    </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">TVP VOD – edukacja i rozrywka dla całej rodziny bez wychodzenia z domu</span>
+                        <span class="article__category--mobile d-lg-none">#czas wolny</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1621"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'JESTEŚMY UWAŻNI – Być rodzicem tu i teraz', 1621);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/articles/17032020/uwazni/a_uwaznosc_rodzic_km_LR.jpg">
+                                                        <img src="https://files.librus.pl/articles/17032020/uwazni/a_uwaznosc_rodzic_kd_LR.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#kampania społeczna</div>
+                                                        </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">JESTEŚMY UWAŻNI – Być rodzicem tu i teraz</span>
+                        <span class="article__category--mobile d-lg-none">#kampania społeczna</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1606"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'JESTEŚMY UWAŻNI – Jak być uważnym? O postawie zaciekawienia', 1606);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/articles/12032020/uwazni/a_uwaznosc_km_LR.jpg">
+                                                        <img src="https://files.librus.pl/articles/12032020/uwazni/a_uwaznosc_kd_LR.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#kampania społeczna</div>
+                                                        </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">JESTEŚMY UWAŻNI – Jak być uważnym? O postawie zaciekawienia</span>
+                        <span class="article__category--mobile d-lg-none">#kampania społeczna</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1604"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'JESTEŚMY UWAŻNI – Nie przegap tego, co najcenniejsze!', 1604);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/articles/12032020/uwazni/a_uwazni_LR_km.jpg">
+                                                        <img src="https://files.librus.pl/articles/12032020/uwazni/a_uwazni_LR_kd.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#kampania społeczna</div>
+                                                        </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">JESTEŚMY UWAŻNI – Nie przegap tego, co najcenniejsze!</span>
+                        <span class="article__category--mobile d-lg-none">#kampania społeczna</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1602"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Koronawirus a bezpieczne wakacje!', 1602);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/images/04032020/PSS/a_PSS_LR_mk.jpg">
+                                                        <img src="https://files.librus.pl/images/04032020/PSS/a_PSS_LR_dk.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#sport</div>
+                                                                <div class="article__sponsored">Artykuł sponsorowany</div>
+                                    </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">Koronawirus a bezpieczne wakacje!</span>
+                        <span class="article__category--mobile d-lg-none">#sport</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1592"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Hipokryzja u rodzica - znasz to?', 1592);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://portal.librus.pl/pic/20200228/3hip/a_hipokryzja_km_LR.jpg">
+                                                        <img src="https://portal.librus.pl/pic/20200228/3hip/a_hipokryzja_kd_LR.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#wychowanie</div>
+                                                        </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">Hipokryzja u rodzica - znasz to?</span>
+                        <span class="article__category--mobile d-lg-none">#wychowanie</span>
+                    </p>
+                    </a>
+</div>                                                            </div>
+                <div class="row small-hide-row">
+                                                                        <div class="article__container article__container--medium">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1590"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Jak walczymy ze smogiem – pobierz raport!', 1590);"
+        >
+                <div class="article__image-container article__image-container--medium">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                        <img src="https://portal.librus.pl/pic/20200205/rapo/a_kd_raport_NDS_LR_LS.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#kampania społeczna</div>
+                                            <p class="article__title">
+                            <span class="inner-title">
+                                Jak walczymy ze smogiem – pobierz raport!
+                            </span>
+                        </p>
+                                                        </div>
+            </div>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--medium">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1586"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Działania Librus a koronawirus', 1586);"
+        >
+                <div class="article__image-container article__image-container--medium">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                        <img src="https://files.librus.pl/articles/09032020/KND2020_odwolanie/a_odwolanie_KND_kd_LR_LS.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#librus</div>
+                                            <p class="article__title">
+                            <span class="inner-title">
+                                Działania Librus a koronawirus
+                            </span>
+                        </p>
+                                                        </div>
+            </div>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1579"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Jak wybrać obóz dla dziecka na wakacje 2020?', 1579);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://portal.librus.pl/pic/20200227/3atas/a_ATAS_Obozy_Letnie_km.jpg">
+                                                        <img src="https://portal.librus.pl/pic/20200227/3atas/a_ATAS_Obozy_Letnie_kd.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#wakacje</div>
+                                                                <div class="article__sponsored">Artykuł sponsorowany</div>
+                                    </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">Jak wybrać obóz dla dziecka na wakacje 2020?</span>
+                        <span class="article__category--mobile d-lg-none">#wakacje</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1576"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Dzień Kobiet i Dzień Mężczyzn – skąd wzięły się te święta?', 1576);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/articles/02032020/Librus/a_dzien_kobiet_km_LR.jpg">
+                                                        <img src="https://files.librus.pl/articles/02032020/Librus/a_dzien_kobiet_kd_LR.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#ciekawostki</div>
+                                                        </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">Dzień Kobiet i Dzień Mężczyzn – skąd wzięły się te święta?</span>
+                        <span class="article__category--mobile d-lg-none">#ciekawostki</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1570"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Dziecko niepełnosprawne – jak zaopiekuje się nim szkoła', 1570);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/articles/03032020/dziecko/a_dzieckoniep1_km_LR.jpg">
+                                                        <img src="https://files.librus.pl/articles/03032020/dziecko/a_dzieckoniep1_kd_LR.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#szkoła</div>
+                                                        </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">Dziecko niepełnosprawne – jak zaopiekuje się nim szkoła</span>
+                        <span class="article__category--mobile d-lg-none">#szkoła</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1568"
+                        onclick="ga('send', 'event', 'artykul', 'click', '#KOMÓRKOMANIA to akcja, w której pomagasz także sobie', 1568);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://portal.librus.pl/pic/20200302/cit/a_DKMS_komorkomania_LR_km.png">
+                                                        <img src="https://portal.librus.pl/pic/20200302/cit/a_DKMS_komorkomania_LR_kd.png"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#wolontariat</div>
+                                                                <div class="article__sponsored">Artykuł sponsorowany</div>
+                                    </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">#KOMÓRKOMANIA to akcja, w której pomagasz także sobie</span>
+                        <span class="article__category--mobile d-lg-none">#wolontariat</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1565"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Bezpieczne wakacje z Polish Soccer Skills', 1565);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/articles/03032020/PSS/a_PSS_art_LR_mk.jpg">
+                                                        <img src="https://files.librus.pl/articles/03032020/PSS/a_PSS_art_LR_kd.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#sport</div>
+                                                                <div class="article__sponsored">Artykuł sponsorowany</div>
+                                    </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">Bezpieczne wakacje z Polish Soccer Skills</span>
+                        <span class="article__category--mobile d-lg-none">#sport</span>
+                    </p>
+                    </a>
+</div>                                                                                                <div class="article__container article__container--small">
+            <a
+            class="article__link  publication-link "
+            href="/rodzina/artykuly/publikacje/1563"
+                        onclick="ga('send', 'event', 'artykul', 'click', 'Kolory wokół nas - co o nich wiesz?', 1563);"
+        >
+                <div class="article__image-container article__image-container--small">
+                                                        <div class="image-bg">
+                       
+                        <picture>
+                                                            <source media="(max-width: 991px)" srcset="https://files.librus.pl/articles/02032020/Librus/a_kolory20_km_LR.jpg">
+                                                        <img src="https://files.librus.pl/articles/02032020/Librus/a_kolory20_kd_LR.jpg"
+                                                                                              />
+                        </picture>
+                    </div>
+                                <div class="article__content-inner">
+                    <div class="article__category">#ciekawostki</div>
+                                                        </div>
+            </div>
+                                <p class="article__title">
+                        <span class="inner-title">Kolory wokół nas - co o nich wiesz?</span>
+                        <span class="article__category--mobile d-lg-none">#ciekawostki</span>
+                    </p>
+                    </a>
+</div>                                                            </div>
+                <div class="button-more-container">
+                    <a class="button-more" href="/rodzina/artykuly" role="button">
+                        Pokaż wszystkie artykuły
+                    </a>
+                </div>
+                <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__row">
+            <div class="footer__column footer__column--logo">
+                <span class="icon icon-logo-librus footer__logo"></span>
+            </div>
+            <div class="footer__column footer__column--nav">
+                <div class="footer-nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item footer-nav__item--title">
+                            Zaloguj się do systemu
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer__link" href="https://sekretariat.librus.pl/" target="_blank">e-Sekretariat</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer__link" href="https://swiadectwa.librus.pl/Swiadectwa/module/StartPage" target="_blank">e-Świadectwa</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer__link" href="https://nauczanie.librus.pl/" target="_blank">e-Nauczanie</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer__link" href="https://indywidualni.pl/logowanie" target="_blank">indywidualni.pl</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer__link" href="https://biblio.edu.pl/eBiblioWeb/lstart" target="_blank">e-biblio</a>
+                        </li>
+                    </ul>
+                    <ul id="second-nav-column" class="footer-nav__list">
+                        <li class="footer-nav__item footer-nav__item--title">
+                            Dowiedz się więcej
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer__link" href="/rodzina/artykuly">Wszystkie artykuły</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer__link" href="https://www.librus.pl/" target="_blank">librus.pl</a>
+                        </li>
+                                                <li class="footer-nav__item">
+                            <a class="footer__link" href="https://www.librus.pl/o-nas/" target="_blank">O nas</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer__link" href="https://www.librus.pl/biuro-prasowe/komunikaty-prasowe/" target="_blank">Biuro prasowe</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer__link" href="https://www.librus.pl/artykuly/partnerzy/" target="_blank">Partnerzy</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer__link" href="https://www.librus.pl/kariera/" target="_blank">Kariera</a>
+                        </li>
+                                                    <li class="footer-nav__item">
+                                <a class="footer__link" href="https://www.librus.pl/kontakt-do-nas/" target="_blank">Kontakt</a>
+                            </li>
+                                            </ul>
+                    <ul id="third-nav-column" class="footer-nav__list">
+                        <li class="footer-nav__item footer-nav__item--title">
+                            &nbsp;
+                        </li>
+                                                    <li class="footer-nav__item">
+                                <a class="footer__link" href="https://konto.librus.pl/" target="_blank">Konto LIBRUS</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a class="footer__link" href="https://konto.librus.pl/pomoc" target="_blank">Pomoc Konta LIBRUS</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a class="footer__link" href="/rodzina/regulamin" target="_blank">Regulamin Konta LIBRUS</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a class="footer__link" href="https://synergia.librus.pl/regulamin" target="_blank">Regulamin Synergia</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a class="footer__link" href="https://www.librus.pl/artykuly/polityka-prywatnosci/" target="_blank">Polityka prywatności</a>
+                            </li>
+                                            </ul>
+                </div>
+            </div>
+            <div class="footer__column footer__column--social">
+                <div class="footer__social">
+                                            <a class="footer__link" href="https://www.facebook.com/librusrodzina/" target="_blank">
+                            <i class="zmdi zmdi-facebook"></i>
+                        </a>
+                                        <a class="footer__link" href="https://twitter.com/libruspl" target="_blank">
+                        <i class="zmdi zmdi-twitter"></i>
+                    </a>
+                    <a class="footer__link" href="https://www.librus.pl/kontakt/" target="_blank">
+                        <i class="zmdi zmdi-email"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+            <div id="cookieBox" class="cookies">
+    <div id="cookieBoxClose" class="cookies__close">
+        <a class="cookies__close-link" href="#">x</a>
+    </div>
+    <p class="cookies__text">
+        Ta strona wykorzystuje pliki cookies. Za ich pomocą zbierane są informacje, które mogą stanowić dane osobowe. Wykorzystujemy je m.in. w celach statystycznych, funkcjonalnych oraz dostosowania strony do indywidualnych potrzeb użytkownika i wyświetlania dopasowanych treści o charakterze marketingowym. Korzystając z serwisu bez zmiany konfiguracji przeglądarki, wyrażasz zgodę na zapisanie plików cookies w pamięci Twojego urządzenia. Możesz samodzielnie zarządzać cookies zmieniając odpowiednio ustawienia w Twojej przeglądarce. Więcej informacji o zasadach przetwarzania Twoich danych osobowych oraz przysługujących Ci prawach znajdziesz w <a href="https://www.librus.pl/artykuly/polityka-prywatnosci/" target="_blank">Polityce prywatności</a>.
+    </p>
+</div>
+                </div>
+            <div class="widget-container">
+                                    <div id="portalWidget" class="widget-portal widget-portal--rodzina">
+                                <div class="widget-header">
+        <img src="https://portal.librus.pl/images/widget_before_logged.png">
+    </div>
+    <div class="widget-content">
+        <h2>Sprawdź teraz!</h2>
+        <ul class="color-list">
+            <li>oceny</li>
+            <li>nieobecności</li>
+            <li>plan lekcji</li>
+            <li>zadania domowe</li>
+            <li>...i wiele innych</li>
+        </ul>
+        <p class="more-info">
+            <a href="https://konto.librus.pl" target="_blank">Dowiedz się więcej</a>
+            o Koncie LIBRUS
+        </p>
+    </div>
+    <div class="widget-bottom">
+        <a class="new-btn widget-btn" href="https://portal.librus.pl/rodzina/register/step_one" role="button">Rozpocznij</a>
+        <a class="widget-btn login-before-btn" href="https://portal.librus.pl/rodzina/login" role="button">Zaloguj (mam Konto LIBRUS)</a>
+    </div>
+                    </div>
+                                            </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true" id="md-not-connected-modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content p-0">
+            <div class="" style="position: relative">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close" style="position: relative">
+                    <span class="mr-2 grey" aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="pl-5 pr-5 pt-3">
+                <div class="container" style="min-height: 225px">
+                    <div class="row">
+                        <h3>Aby kontynuować zakupy, powiąż przynajmniej jedno konto z systemu Synergia!
+                        </h3>
+                    </div>
+                    <div class="row mt-3">
+                        <span>Mobilne dodatki to usługa dedykowana osobom, które powiązały swoje Konto LIBRUS z przynajmniej jednym kontem w systemie Synergia.
+Nie zrobiłeś tego? Zrób to teraz, to tylko chwila!</span>
+                    </div>
+                    <div class="row mt-3 mb-3 text-center">
+                        <div class="col">
+                            <div class="text-center p-0"><a class="modal-btn mb-1"
+                                                        href="https://portal.librus.pl/rodzina/connect" style="
+            color: #fff;
+            background-color: #028ae1;
+            white-space: normal;
+            font-weight: 500;
+            font-size: 18px;
+            text-transform: initial;
+            text-decoration: none;
+            border: 1px solid #028ae1;">
+    Powiąż konto</a></div>                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pl-5 pr-5 pt-3" style="background-color: #028ae1; color: white">
+                <div class="row">
+                    <div class="col flex-column align-items-baseline">
+                        <h4>Mobilne dodatki</h4>
+                        <a href="https://konto.librus.pl/mobilnedodatki" target="_blank"
+                           class="btn btn-default btn-basket-caption"
+                           style="background-color: #f76e6e; color: white; white-space: normal !important">
+                            Dowiedz się więcej
+                        </a>
+                    </div>
+                    <div class="col aligned" style="flex: 1">
+                        <p class="small">
+                            Mobilne dodatki do aplikacji Librus to funkcje zwiększające komfort korzystania z niej.
+                            Wiadomości, Zadania domowe, widok Biurko to tylko część z udogodnień, z których możesz
+                            korzystać. Ciesz się wygodą na smartfonie, tablecie i komputerze.</p>
+                    </div>
+                    <div class="col aligned flex-column d-none d-md-block" style="margin-top: -20px; background-image: url('/images/Devices_2.png');
+                    background-position: center center; background-size: contain; background-repeat: no-repeat">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-mobile-addons shop-modal" tabindex="-1" role="dialog" aria-hidden="true" id="md-not-logged-modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content p-0">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close" >
+                <span class="mr-1 grey" aria-hidden="true">&times;</span>
+            </button>
+            <div class="pl-5 pr-5 pt-3 blue-container">
+                <div class="row">
+                    <div class="col-md-5 aligned flex-column d-none d-md-block" style="margin-top: -20px; background-repeat: no-repeat;
+                    background-image: url('/images/Devices_2.png');
+                    background-position: center center; background-size: contain">
+                    </div>
+                    <div class="col-md-7 flex-column align-items-baseline">
+                        <h4>Mobilne dodatki</h4>
+                        <p class="small">
+                            Mobilne dodatki do aplikacji Librus to funkcje zwiększające komfort korzystania z niej.
+                            Wiadomości, Zadania domowe, widok Biurko to tylko część z udogodnień, z których możesz
+                            korzystać. Ciesz się wygodą na smartfonie, tablecie i komputerze.
+                        </p>
+                        <a href="https://konto.librus.pl/mobilnedodatki" target="_blank"
+                           class="btn btn-default btn-basket-caption"
+                           style="background-color: #f76e6e; color: white; white-space: normal !important">
+                            Dowiedz się więcej
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pl-5 pr-5 pt-3 white-container">
+                <div class="container" style="min-height: 225px">
+                    <div class="row">
+                        <h3>
+                            Wybierz sposób zakupu
+                        </h3>
+                    </div>
+                    <div class="row mt-3">
+                        <span class="text">
+                            Kup Mobilne dodatki bezpośrednio do swojego Konta LIBRUS:
+                        </span>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-sm-12 mt-2 mb-2 mt-md-0 mb-md-0 button-login">
+                                                            <div class="text-center p-0">
+                                    <a class="btn btn-primary-reverse btn-modal" href="https://portal.librus.pl/rodzina/login?ref=mobilne-dodatki">
+                                        Zaloguj się
+                                    </a>
+                                </div>
+                                                    </div>
+                        <div class="col-sm-12 register">
+                            <a href="https://portal.librus.pl/rodzina/register">Nie masz Konta LIBRUS? Załóż je!</a>
+                        </div>
+                    </div>
+                                            <div class="row mt-3">
+                            <span class="text">
+                                lub kup voucher z kodem na Mobilne dodatki:
+                            </span>
+                            <div class="col-sm-12 no-logged">
+                                <div class="text-center p-0">
+                                    <a class="btn btn-primary btn-modal" href="/rodzina/sklep/mobilne-dodatki-voucher">
+                                        Kup bez logowania
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-mobile-addons shop-modal" tabindex="-1" role="dialog" aria-hidden="true" id="md-disabled-modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content p-0">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close" >
+                <span class="mr-1 grey" aria-hidden="true">&times;</span>
+            </button>
+            <div class="pl-5 pr-5 pt-3 blue-container">
+                <div class="row">
+                    <div class="col-md-5 aligned flex-column d-none d-md-block" style="margin-top: -20px; background-repeat: no-repeat;
+                    background-image: url('/images/Devices_2.png');
+                    background-position: center center; background-size: contain">
+                    </div>
+                    <div class="col-md-7 flex-column align-items-baseline">
+                        <h4>Mobilne dodatki</h4>
+                        <p class="small">
+                            Mobilne dodatki do aplikacji Librus to funkcje zwiększające komfort korzystania z niej.
+                            Wiadomości, Zadania domowe, widok Biurko to tylko część z udogodnień, z których możesz
+                            korzystać. Ciesz się wygodą na smartfonie, tablecie i komputerze.
+                        </p>
+                        <a href="https://konto.librus.pl/mobilnedodatki" target="_blank"
+                           class="btn btn-default btn-basket-caption"
+                           style="background-color: #f76e6e; color: white; white-space: normal !important">
+                            Dowiedz się więcej
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pl-5 pr-5 pt-3 white-container">
+                <div class="container" style="min-height: 225px">
+                    <div class="row">
+                        <h3>
+                            Mobilne dodatki                        </h3>
+                    </div>
+                    <div class="row mt-3">
+                        <span class="text">
+                            Aktywacja Mobilnych dodatków na rok szkolny 2019/2020 będzie możliwa od 1 września br.                        </span>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-sm-12">
+                            <div class="text-center p-0">
+                                <br />
+                                <br />
+                                <button class="modal-btn mb-1" type="button" data-dismiss="modal" aria-label="Close" 
+                                    style="
+                                        background-color: white;
+                                        white-space: normal;
+                                        border: 1px solid #028ae1;">
+                                    OK
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade shop-modal" tabindex="-1" role="dialog" aria-hidden="true" id="Indywidualni-not-logged-modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content p-0">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close" >
+                <span class="mr-1 grey" aria-hidden="true">&times;</span>
+            </button>
+            <div class="pl-5 pr-5 pt-3 blue-container">
+                <div class="row">
+                    <div class="col-md-5 aligned flex-column d-none d-md-block" style="margin-top: -20px; background-repeat: no-repeat;
+                        background-image: url('/images/IDW_laptop.png'); background-position: center center;
+                        background-size: contain">
+
+                    </div>
+                    <div class="col-md-7 flex-column align-items-baseline">
+                        <h4 class="">indywidualni.pl</h4>
+                        <p class="small">
+                            Pakiet testów „Mocne strony i predyspozycje” oraz 3-letni dostęp do portalu z bazą metod,
+                            technik i kart pracy podnoszących efektywność nauki.
+                        </p>
+                        <a href="https://konto.librus.pl/indywidualni" target="_blank"
+                           class="btn btn-default btn-basket-caption"
+                           style="background-color: #f76e6e; color: white; white-space: normal !important">
+                            Dowiedz się więcej
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pl-5 pr-5 pt-3 white-container">
+                <div class="container" style="min-height: 230px">
+
+                    <div class="row">
+                        <h3>Taniej dla użytkowników Konta LIBRUS!
+                        </h3>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-sm-12 col-lg-6 text-center">
+
+                            <p>Cena regularna</p>
+
+                            <h1 class="mb-1"><s>39 zł</s></h1>
+
+
+                            <div class="text-center p-0"><a class="modal-btn mb-1"
+                             target="_blank"                             href="https://indywidualni.pl" style="
+            color: black;
+            background-color: white;
+            white-space: normal;
+            font-weight: 500;
+            font-size: 18px;
+            text-transform: initial;
+            text-decoration: none;
+            border: 1px solid black;">
+    Kup w regularnej cenie</a></div>                        </div>
+                        <div class="col-sm-12 col-lg-6 mt-sm-4 mt-md-0 text-center red">
+
+                            <p> Konto LIBRUS</p>
+
+                            <h1 class="mb-1">29 zł</h1>
+
+                            <div class="text-center p-0"><a class="modal-btn mb-1"
+                                                        href="https://portal.librus.pl/rodzina/register" style="
+            color: #fff;
+            background-color: red;
+            white-space: normal;
+            font-weight: 500;
+            font-size: 18px;
+            text-transform: initial;
+            text-decoration: none;
+            border: 1px solid white;">
+    Zarejestruj się</a></div>                            <div>
+                                <span class="small text-center red">Masz już konto? <a
+                                            href="https://portal.librus.pl/rodzina/login?ref=indywidualni">Zaloguj się.</a></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                                    </article>
+</main>
+        <script src="/js/unsupported-browsers.js?id=68975d650e7517d24dc8"></script>
+<script>
+    var voucherEnablitiy = "2";
+</script>
+<script src="/js/localization.js?id=ef42668fb476c5c487ee"></script>
+<script src="/js/manifest.js?id=f8d80a3eb80c6845dc55"></script>
+<script src="/js/vendor.js?id=10e2bfe70ce2d926a3fd"></script>
+<script src="/js/app.js?id=17771f82fff733c70e93"></script>
+<!--[if lt IE 9]>
+<script src="/js/html5shiv.min.js?id=5050b8ab490e5cbf5938"></script>
+<script src="/js/respond.min.js?id=75df8d98ab0d1529cf8d"></script>
+<![endif]-->
+            <script>
+        var widgetData = new window.WidgetData();
+        widgetData.clear();
+    </script>
+    </body>
+</html>

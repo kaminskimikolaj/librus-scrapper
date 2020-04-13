@@ -110,7 +110,7 @@ let options = [
   await rp(options[0])
   console.log("First request completed")
 
-  const $ = cheerio.load(await rp(options[1]))
+  var $ = cheerio.load(await rp(options[1]))
   let src = $('#caLoginIframe').attr('src')
   options[2].url = src
   console.log("Second request completed, extracted src code", src)
@@ -148,5 +148,5 @@ let options = [
 
   messagesResponseHtml = await rp(options[10])
   console.log("Eleventh request completed")
-  let $ = cheerio.load(messagesResponseHtml)
+  $ = cheerio.load(messagesResponseHtml)
 })()

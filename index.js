@@ -149,4 +149,7 @@ let options = [
   messagesResponseHtml = await rp(options[10])
   console.log("Eleventh request completed")
   $ = cheerio.load(messagesResponseHtml)
+  $(".decorated.stretch > tbody > tr > td:nth-child(3)").each((i, elem) => {
+    console.log($(this).attr("style"))
+  })
 })()

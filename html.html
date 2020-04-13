@@ -1,0 +1,1695 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+    <html lang="pl-PL">
+   <head><title>LIBRUS Synergia</title>
+   <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+   <meta http-equiv="Reply-to" content="administrator@dziennik.librus.pl">
+   <meta http-equiv="Content-Language" content="pl">
+   <meta name="Keywords" content="dziennik, elektroniczny, edukacja, oświata, programy, komputerowe, edziennik, e-dziennik, synergia">
+   <meta name="Description" content="Dziennik elektroniczny">
+   <meta name="robots" content="noindex, nofollow" />
+        <link rel="shortcut icon" href="/images/synergia.ico">
+           <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-3618915-24', {'sampleRate': 2.5});
+    ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->            <link rel="stylesheet" href="/js/jquery/jquery-ui-1.9.2.custom/css/librus/jquery-ui-1.9.2.custom.min.css" />
+        <link rel="stylesheet" href="/js/jquery/jquery-ui-1.9.2.custom/css/librus/librus-aditional.css" />
+        <link rel="stylesheet" href="/js/librus-component/data-table/librus-data-table.css?v2" />
+        <link rel="stylesheet" href="/js/librus-component/panel/librus-panel.css?v1" />
+        <link rel="stylesheet" href="/js/librus-component/notification/librus-notification.css?v4" />
+        <link rel="stylesheet" href="/js/librus-component/dialog/librus-dialog.css?v1" />
+                <script type="text/javascript" src="/js/jquery/jquery-ui-1.9.2.custom/js/jquery-1.8.3.js" ></script>
+        <script type="text/javascript" src="/js/jquery/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js"></script>
+        <script type="text/javascript" src="/js/newLayout/jquery.mask.min.js"></script>
+        <script type="text/javascript" src="/js/LibrusJQueryTheme.js"></script>
+        <script type="text/javascript" src="/js/rowCollection.js"></script>
+        <script type="text/javascript" src="/js/quickSearchTool.js"></script>
+        <script type="text/javascript" src="/js/CsrfProtection.js"></script>
+        <script type="text/javascript">
+            var csrfTokenName = "requestkey";
+            var csrfTokenValue = "MC4wMjY3MjMwMCAxNTg2ODAzMTQzX2IzOWE2NWU5YzlhYTFmZDY2NWY5YWQ2NGNkZjJlYTZl";
+        </script>
+            <script type='text/javascript'>
+        var APP_SETTINGS = new Object();
+        Object.defineProperties(APP_SETTINGS, {
+            idw_content_domain: {
+                value: "https://synergia.indywidualni.pl",
+                enumerable: true
+            }
+        });
+    </script>
+    <script type="text/javascript" src="/js/fileValidator.1535145151.js"></script><script type="text/javascript" src="/js/CloudStorageBrowseTool.1507325373.js"></script><script type="text/javascript" src="/js/indywidualni.1507325373.js"></script><script type="text/javascript" src="/js/jquery/fancybox/jquery.fancybox-1.3.4.1332493810.js"></script><script type="text/javascript" src="/js/connectRMNToLesson.1507325373.js"></script><script type="text/javascript" src="/js/libs/redom/redom.min.1575670839.js"></script><script type="text/javascript" src="/js/libs/lodash/lodash.min.1575670839.js"></script><script type="text/javascript" src="/js/libs/navigo/navigo.min.1581718575.js"></script><script type="text/javascript" src="/js/util/util.1581718575.js"></script><script type="text/javascript" src="/js/librus-component/data-table/librus-data-table.1581718575.js"></script><script type="text/javascript" src="/js/librus-component/panel/librus-panel.1581718575.js"></script><script type="text/javascript" src="/js/librus-component/notification/librus-notification.1581718575.js"></script><script type="text/javascript" src="/js/librus-component/dialog/librus-dialog.1585948224.js"></script>        <script type="text/javascript">
+            CSRF_PROTECTION.startAddingCsrfTokenTo($, csrfTokenName, csrfTokenValue);
+        </script>
+           <script src="/js/jquery/jquery.form.js"></script>
+   <script src="/js/jquery/jquery-ui-timepicker-addon.js"></script><script src="/js/datatables.js"></script>   <script src="/assets/js/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+   <link href="/assets/css/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css"/>
+   <script>// HOTFIX: We can't upgrade to jQuery UI 1.8.6 (yet)
+    // This hotfix makes older versions of jQuery UI drag-and-drop work in IE9
+    (function($){var a=$.ui.mouse.prototype._mouseMove;$.ui.mouse.prototype._mouseMove=function(b){if($.browser.msie&&document.documentMode>=9){b.button=1};a.apply(this,[b]);}}(jQuery));</script>
+      
+
+
+           <link rel="stylesheet" href="/LibrusStyleSheet2.1581718575.css" type="text/css" media="screen">        <link rel="stylesheet" href="/LibrusPrintStyleSheet2.1495831305.css" type="text/css" media="print">        <!--[if !IE]><!-->
+        <link rel="stylesheet" href="/LibrusStyleSheet2NonIE.1361960241.css" type="text/css" media="screen">        <!--<![endif]-->
+        <!--[if IE]>
+        <link rel="stylesheet" href="/LibrusStyleSheet2IE.1368167439.css" type="text/css" media="screen">        <![endif]-->
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="/LibrusStyleSheet2IE7.1371460280.css" type="text/css" media="screen">        <![endif]-->
+        <!--[if IE 8]>
+        <link rel="stylesheet" href="/LibrusStyleSheet2IE8.1367217179.css" type="text/css" media="screen">        <![endif]-->
+        <!--[if IE 9]>
+        <link rel="stylesheet" href="/LibrusStyleSheet2IE9.1366628972.css" type="text/css" media="screen">        <![endif]-->
+        <link rel="stylesheet" href="/assets/css/synergia.1565269166.css" type="text/css" media="screen"><link rel="stylesheet" href="/assets/css/style.1565269166.css" type="text/css" media="screen"><script type="text/javascript" src="/assets/js/synergia/main.1438948866.js"></script>        <script type="text/javascript">
+            var appName1 = 'LIBRUS Synergia';
+            var appName2 = 'LIBRUS Synergia';
+            var appName3 = 'LIBRUS Synergia';
+            var appName4 = 'LIBRUS Synergia';
+            var appName5 = 'LIBRUS Synergia';
+            var appName6 = 'LIBRUS Synergia';
+            var appName7 = 'LIBRUS Synergia';
+        </script>
+        <link rel="stylesheet" type="text/css" media="screen" href="/js/newLayout/SparkBoxSelect/sparkbox-select.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/jquery.treeview.css" />
+
+            <script type="text/javascript" src="/js/cookie.js" ></script>
+       <script type="text/javascript" src="/js/uklad_strony2.1544825514.js"></script>       <script type="text/javascript" src="/js/ZeroClipboard.min.js"></script>
+       <script type="text/javascript">
+           ZeroClipboard.setDefaults( { moviePath: '/swf/ZeroClipboard.swf' } );
+       </script>
+
+
+   <script type="text/javascript" src="/js/newLayout/SparkBoxSelect/jquery.sparkbox-select.js" ></script>
+        <link rel="stylesheet" href="/js/jquery/mTip.black.css" />
+        <script src="/js/newLayout/amCharts.js" type="text/javascript"></script>
+        <script src="/js/validators.js" type="text/javascript" ></script>
+        <script src="/js/ErrorProvider.js" type="text/javascript"></script>
+        <script src="/js/jquery/mTip-v1.0.3.js" type="text/javascript"></script>
+        <script src="/js/newLayout/rgbcolor.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/modules/Sekretariat/js/SKFOldInterface/Utils.1565269167.js"></script><script type="text/javascript" src="/js/newLayout/newLayoutJS.1570828350.js"></script><script type="text/javascript" src="/js/newLayout/newLayoutJSExecutes.1507325373.js"></script>    <!--[if IE 7]>
+    <script type="text/javascript" src="/js/newLayout/newLayoutJSIE7.1368708313.js"></script>    <![endif]-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/js/newLayout/newLauoutJSltIE9.1375344710.js"></script>    <![endif]-->
+    <link rel="stylesheet" href="/js/jquery/jquery.multiselect.1389284078.css" type="text/css">    <script type="text/javascript" src="/js/jquery/jquery.multiselect.1422664051.js"></script>    <script type="text/javascript" src="/assets/js/synergia/MultiselectLibrus.1565269166.js"></script>    <script type="text/javascript" src="/js/pobierz_date_wywiadowki2.1495831305.js"></script>    <script type="text/javascript" src="/js/pobierz_email4.1535749794.js"></script>       <script type="text/javascript" src="/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+   <link rel="stylesheet" type="text/css" href="/js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+   <!--[if lt IE 9]>
+   <script type="text/javascript">
+   $(document).ready(function(){
+        $(window).on("resize", function(){
+            simMediaQuery();
+        });
+
+        simMediaQuery();
+
+        function simMediaQuery(){
+            var widthTrigger = 1100;
+            var viewportW = parseInt($(window).width());
+            if (viewportW > widthTrigger){
+                if( $('#interfejs-lekcyjny').length <= 0 || parseInt( $('#body').css("padding-left") ) < 50 ) {
+                    $('#body').css({"padding-left" : "50px"});
+                }
+                $('#body').css({"padding-right" : "50px"});
+            } else {
+                if( $('#interfejs-lekcyjny').length <= 0 ) {
+                    $('#body').css({"padding-left" : "0"});
+                }
+                $('#body').css({"padding-right" : "0"});
+            }
+        }
+
+    });
+   </script>
+   <![endif]-->
+   <script type="text/javascript" src="/ajax.js"></script>
+   <script type="text/javascript">
+
+	<!--
+	var ajax = new sack();
+	var ajax1 = new sack();
+	var ajax2 = new sack();
+	var ajax3 = new sack();
+	var ajax4 = new sack();
+	var ajaxLesBar = new sack();
+	var ajaxKomMenu = new sack();
+	var edit_success = false; // wykorzystywane w onload przy hospitacjach
+	var isInterfaceMinimalize = 0;
+	var isInterfaceHide = 0;
+
+	/*
+       Function: getLessonsList
+
+       Function gets lessons list.
+
+       Author:
+            Dariusz Kozka <dariusz.kozka[at]librus.pl>
+
+       Parameters:
+
+            int 	sel - idetifier of class.
+            int 	pick - identifier of selected lesson.
+
+    */
+	function getLessonsList(sel, pick)
+	{
+		var klasa = sel;
+		if(klasa > 0)
+		{
+			if(pick)
+			{
+				var selected = '&selected=' + pick;
+			}
+			else
+			{
+				var selected = '';
+			}
+			document.getElementById('lekcja').options.length = 0;
+			if(klasa.length>0)
+			{
+				ajax2.requestFile = "https:\/\/synergia.librus.pl" + '/ajax/combos_lekcje.php?klasa=' + klasa + selected;
+				ajax2.onCompletion = createLessons;
+				ajax2.onLoading = showLessonWaitMessage;
+				ajax2.runAJAX();
+			}
+		}
+	}
+
+    /*
+       Function: createLessons
+
+       Function create lessons.
+
+       Author:
+            Dariusz Kozka <dariusz.kozka[at]librus.pl>
+
+    */
+	function createLessons()
+	{
+		document.getElementById('lekcja').options.length = 0;
+		var obj = document.getElementById('lekcja');
+		eval(ajax2.response);
+	}
+
+    /*
+       Function: showLessonWaitMessage
+
+       Function shows lesson wait message.
+
+       Author:
+            Dariusz Kozka <dariusz.kozka[at]librus.pl>
+
+    */
+	function showLessonWaitMessage()
+	{
+		document.getElementById('lekcja').options[document.getElementById('lekcja').options.length] = new Option('Trwa generowanie listy...', '');
+	}
+
+    /*
+       Function: hideSubmenuLayer
+
+       Function hide submenu layer.
+
+       Author:
+            Dariusz Kozka <dariusz.kozka[at]librus.pl>
+
+    */
+	function hideSubmenuLayer()
+	{
+		var tool = document.getElementById('tooltip');
+		if(tool)
+		{
+			document.body.removeChild(tool);
+		}
+		var ajax_loader = '<div style="text-align: center;">Ładowanie ustawień ...</div>';
+		ajax.requestFile = "https:\/\/synergia.librus.pl" + '/ajax/pozycje_obiektow.php?action=hide&objectType=interfejsSubmenu&isInterfaceMin='+isInterfaceMinimalize;
+		ajax.onCompletion = loadCoords;
+		ajax.onLoading = showWaitMessage;
+		ajax.runAJAX();
+		dd.elements.interfejsSubmenu.hide(true);
+		function showWaitMessage()
+		{
+			document.getElementById('interfejsSubmenu').innerHTML = ajax_loader;
+		}
+
+		function loadCoords()
+		{
+			document.getElementById('interfejsSubmenu').innerHTML = ajax.response;
+		}
+	}
+
+    /*
+       Function: minimalizeInterface
+
+       Function minimalize interface.
+
+       Author:
+            Dariusz Kozka <dariusz.kozka[at]librus.pl>
+
+    */
+	function minimalizeInterface()
+	{
+		var menu = document.getElementById('interfejsmenu');
+		var minImg = document.getElementById('minimalizeInterfaceIMG');
+		var maxImg = document.getElementById('maximalizeInterfaceIMG');
+		if(menu && maxImg && minImg){
+			menu.style.display = 'none';
+			minImg.style.display = 'none';
+			maxImg.style.display = '';
+			isInterfaceMinimalize = 1;
+			ajax4.requestFile = "https:\/\/synergia.librus.pl" + '/ajax/stan_minimalizacji_interfejsu.php?isInterfaceMin='+isInterfaceMinimalize;
+			ajax4.runAJAX();
+
+		}
+	}
+
+    /*
+       Function: maximalizeInterface
+
+       Function maximalize interface.
+
+       Author:
+            Dariusz Kozka <dariusz.kozka[at]librus.pl>
+
+    */
+	function maximalizeInterface()
+	{
+		var minImg = document.getElementById('minimalizeInterfaceIMG');
+		var maxImg = document.getElementById('maximalizeInterfaceIMG');
+		var menu = document.getElementById('interfejsmenu');
+		if(menu && maxImg && minImg){
+			menu.style.display = '';
+			minImg.style.display = '';
+			maxImg.style.display = 'none';
+			isInterfaceMinimalize = 0;
+			ajax4.requestFile = "https:\/\/synergia.librus.pl" + '/ajax/stan_minimalizacji_interfejsu.php?isInterfaceMin='+isInterfaceMinimalize;
+			ajax4.runAJAX();
+		}
+	}
+    
+    /*
+      Class: lessonBarStatus
+
+      Description:
+      LessonBar object with refresh functionality
+      
+      Author:
+      Krzysztof Żerucha <krzysztof.zerucha[at]librus.pl>
+    */
+    
+    var lessonBarStatus = function(lessonStart, lessonEnd, now, lessonNumber)
+    {
+        if (!Number.isInteger(lessonStart) || lessonStart < 0) {
+            throw new Error("Wrong type of input variable 'lessonStart'. Expected non-negative integer.");
+        }
+
+        if (!Number.isInteger(lessonEnd) || lessonEnd < 0) {
+            throw new Error("Wrong type of input variable 'lessonEnd'. Expected non-negative integer.");
+        }
+        
+        if (lessonStart >= lessonEnd) {
+            throw new Error("Wrong value of 'lessonStart' or 'lessonEnd'. 'lessonStar' is later than 'lessonEnd'.");
+        }
+
+        if (!Number.isInteger(now) || now < 0) {
+            throw new Error("Wrong type of input variable 'now'. Expected non-negative integer.");
+        }
+
+        if ((!Number.isInteger(lessonNumber) || lessonNumber < 0) && lessonNumber !== null) {
+            throw new Error("Wrong type of input variable 'lessonNumber'. Expected non-negative integer or null.");
+        }
+        
+        if (document.getElementById('progressBarLekcja') === null) {
+            throw new Error("progressBarLekcja not found");
+        }
+        
+        if (document.getElementById('progressBarText') === null) {
+            throw new Error("progressBarText not found");
+        }
+        
+        var lessonStart = lessonStart;
+        var lessonEnd = lessonEnd;
+        var actualTimeForLessonBar = now;
+        var lessonNumber = lessonNumber;
+        var divBar = document.getElementById('progressBarLekcja');
+        var divTxtNr = document.getElementById('progressBarText');
+        var lessonBarInterval;
+        this.refresh = function() {
+            var actualTime = actualTimeForLessonBar;
+            actualTimeForLessonBar += 60;
+            var percent = 0;
+            var remainingMinutes = 0;
+            if (lessonNumber !== null) {
+                percent = 100;
+                if (actualTime <= lessonEnd) {
+                    var percent = (actualTime - lessonStart) / (lessonEnd - lessonStart) * 100;
+                    var remainingMinutes = parseInt((lessonEnd - actualTime) / 60);
+                }
+                
+                divBar.style.width = percent + '%';
+                divTxtNr.innerHTML = 'Do końca lek. nr ' + lessonNumber + ': <span class="progressBarTextMinutes">' + remainingMinutes + ' min</span>';
+            } else {
+                divTxtNr.innerHTML = 'Do końca lekcji';
+                this.stopInterval();
+            }
+
+            if (percent >= 100) {
+                this.stopInterval();
+            }
+        }
+    };
+    
+    lessonBarStatus.prototype.startInterval = function() {
+        var self = this;
+        lessonBarInterval = window.setInterval(function() {self.refresh();}, 60000);
+        self.refresh();
+    };
+    
+    lessonBarStatus.prototype.stopInterval = function() {
+        clearInterval(lessonBarInterval);
+    };
+
+	function ustaw_komunikat_menu(stan)
+	{
+		ajaxKomMenu.requestFile = "https:\/\/synergia.librus.pl" + '/ajax/ustaw_komunikat_menu.php?stan='+stan;
+		ajaxKomMenu.execute = true;
+		ajaxKomMenu.runAJAX();
+
+	}
+
+    function ustaw_komunikat_archiwum(stan)
+	{
+		ajaxKomMenu.requestFile = "https:\/\/synergia.librus.pl" + '/ajax/ustaw_komunikat_archiwum.php?stan='+stan;
+		ajaxKomMenu.execute = true;
+		ajaxKomMenu.runAJAX();
+
+	}
+
+	function zmien_typ_menu(stan)
+	{
+            $.ajax({
+                dataType: "json",
+                type: "post",
+                url: '/ajax/zmien_typ_menu_adv.php',
+                data: 'stan='+stan,
+                success: function(data){
+                    if( data["SUCCESS"] ) {
+                        var html = $.parseHTML( data["CONTENT"], document, true );
+                        var scripts = [];
+                        var found = null;
+                        $.each( html, function( i, el ) {
+                            if(el.nodeName == 'SCRIPT') {
+                                scripts[i] = el;
+                            } else if(el.nodeName != '#text') {
+                                if($(el).attr("id") == "header") {
+                                    found = $(el);
+                                }
+                            }
+                        });
+                        if (found.length > 0) {
+                            $("#header").replaceWith(found);
+                            setTimeout(function(){
+                                $.each( scripts, function( i, el ) {
+                                    $("#header").append(el);
+                                });
+                            }, 500);
+                        }
+                    }
+                }
+            });
+	}
+
+    var interfejs_fold_object = function()
+    {
+        var res = new Object();
+        $('#interfejs-lekcyjny div[id^="g_"]').each(function() {
+            res[$(this).attr('id')] = !$(this).is(':visible');
+        });
+
+        return res;
+    };
+
+//------------
+
+//-->
+ </script>
+
+
+
+ <script type="text/javascript" src="/js/ImageSwaper.js"></script>
+
+
+<script type="text/javascript" charset="UTF-8">
+/* <![CDATA[ */
+try { if (undefined == xajax.config) xajax.config = {}; } catch (e) { xajax = {}; xajax.config = {}; };
+xajax.config.requestURI = "https://synergia.librus.pl/wiadomosci";
+xajax.config.statusMessages = false;
+xajax.config.waitCursor = true;
+xajax.config.version = "xajax 0.5 rc2";
+xajax.config.legacy = false;
+xajax.config.defaultMode = "asynchronous";
+xajax.config.defaultMethod = "POST";
+/* ]]> */
+</script>
+<script type="text/javascript" src="/funkcje/xajax/xajax_js/xajax_core.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+/* <![CDATA[ */
+window.setTimeout(
+ function() {
+  var scriptExists = false;
+  try { if (xajax.isLoaded) scriptExists = true; }
+  catch (e) {}
+  if (!scriptExists) {
+   alert("Error: the xajax Javascript component could not be included. Perhaps the URL is incorrect?\nURL: /funkcje/xajax/xajax_js/xajax_core.js");
+  }
+ }, 2000);
+/* ]]> */
+</script>
+
+<script type='text/javascript' charset='UTF-8'>
+/* <![CDATA[ */
+xajax_odswiezSesje = function() { return xajax.request( { xjxfun: 'odswiezSesje' }, { parameters: arguments } ); };
+xajax_ocenaWiadomosci = function() { return xajax.request( { xjxfun: 'ocenaWiadomosci' }, { parameters: arguments } ); };
+xajax_pobierzArtykulPomocy = function() { return xajax.request( { xjxfun: 'pobierzArtykulPomocy' }, { parameters: arguments } ); };
+xajax_pobierzDzialPomocy = function() { return xajax.request( { xjxfun: 'pobierzDzialPomocy' }, { parameters: arguments } ); };
+xajax_ustaw_komunikat_menu = function() { return xajax.request( { xjxfun: 'ustaw_komunikat_menu' }, { parameters: arguments } ); };
+xajax_ustaw_komunikat_archiwum = function() { return xajax.request( { xjxfun: 'ustaw_komunikat_archiwum' }, { parameters: arguments } ); };
+xajax_zmien_typ_menu = function() { return xajax.request( { xjxfun: 'zmien_typ_menu' }, { parameters: arguments } ); };
+/* ]]> */
+</script>
+        <script type="text/javascript">
+            if (xajax) {
+                xajax.config.postHeaders["requestkey"] = "MC4wMjY3MjMwMCAxNTg2ODAzMTQzX2IzOWE2NWU5YzlhYTFmZDY2NWY5YWQ2NGNkZjJlYTZl";
+            }
+        </script>
+        </head>
+<body onload="ImageSwaper.GetInstance().Load(); ">
+
+<script type="text/javascript">
+  var toload = 0;  
+  var imageShowed = false;
+    
+  /*
+       Function: startLoading
+
+       Function show preloader.
+
+       Author:
+            Sylwester Wydmuch <sylwester.wydmuch[at]librus.pl>
+
+    */
+  function startLoading()
+  {
+    toload = toload + 1; 
+    window.setTimeout('showLoadingImage()', 700);
+    
+  }
+    
+  /*
+       Function: showLoadingImage
+
+       Function show preloader image.
+
+       Author:
+            Sylwester Wydmuch <sylwester.wydmuch[at]librus.pl>
+
+    */
+  function showLoadingImage()
+  {
+   if(!imageShowed && toload>0) 
+   {
+    if (document.getElementById('loading')) {
+        document.getElementById('loading').style.display = 'block';
+        imageShowed=true;
+    }	
+   }
+  }
+    
+  /*
+       Function: stopLoading
+
+       Function hide preloader.
+
+       Author:
+            Sylwester Wydmuch <sylwester.wydmuch[at]librus.pl>
+
+    */
+  function stopLoading() 
+  {
+    toload = toload -1;
+    if(toload==0) 
+  	{
+  		document.getElementById('preloader-box').style.display='none';
+  		imageShowed = false;
+        $( 'input[type=submit],input[type=button], button' ).not('.ui-button').not('.advanced-button').css({'z-index': $(this).parent().zIndex() }).button();
+        
+
+        $( '.button-set .advanced-button' ).not('.ui-button').button({
+            text: true,
+            icons: {
+                secondary: 'ui-icon-triangle-1-s'
+            }
+        }).click(function() {
+            $('.button-set ul').not( $( this ).parent().next() ).hide();
+            var menu = $( this ).parent().next().stop().animate({
+                height: 'toggle'
+            }, 100);
+            $( document ).one( 'click', function() {
+                menu.hide();
+            });
+            return false;
+        }).parent().next().hide().css({'z-index': $(this).parent().zIndex()+1}).menu().buttonset();
+	}
+    
+  }
+  xajax.callback.global.onRequest = function() {startLoading();}
+  xajax.callback.global.onComplete = function() {stopLoading();}
+  </script><div id="preloader-box"  style="display: none;">
+            <div id="preloader-curtain"></div>
+            <div id="preloader">
+                <span id="preloader-logo"></span>
+                <span id="preloader-loader"></span>
+            </div>
+        </div>    <div class="yellowCard  maximalize " class="screen-only ui-widget-content draggable"
+                id="yellowCard_1"
+        style=" left: 0px; top: 0px; display: none;"
+    >
+        <div class="titleYellowCard  maximalize " id="yellowCard_1_DraggHandle"
+            onmouseup="interface_object_save_position('yellowCard_1', $(this.parentNode).offset().left, $(this.parentNode).offset().top, interfejs_fold_object());"
+        >
+            <div class="content"></div>
+        </div>
+        <div class="yellowCardClose" onmouseup="return false;" onclick='yellowCardAction("close", "yellowCard_1");'>
+            <a href="javascript:void(0);"></a>
+        </div>
+                        <div class="yellowCardMinimalize" onclick='yellowCardAction("minimalize", "yellowCard_1");' ></div>
+                <div class="yellowCardMaximalize" onclick='yellowCardAction("maximalize", "yellowCard_1");' style="display:none;" ></div>
+                     <div class="cardBody" >
+            <div class="content"></div>
+        </div>
+    </div>
+    <script type="text/javascript">$('#yellowCard_1').offset({ top: screen.height/2-150, left: screen.width/2-150});</script>
+<script type="text/javascript" src="/wz_dragdrop.js"></script>
+ <!--
+ <div id="kontener">
+ <div id="baner"><img src="/images/baner_top1.jpg"></div>
+  -->
+    <div id="page" class="altum">
+        <div id="header">    <div id="main-navigation-container">
+        <div id="main-navigation">            <div id="main-menu">
+                <ul class="main-menu-list">
+                    <li><a href="/wyloguj">Wyloguj</a></li>                    <li><a href="/help" target="_blank">Pomoc</a></li>                    <li><a href="/ustawienia">Ustawienia</a></li>                    <li><a href="/ankiety_admin_ankiety">Ankiety</a></li>
+                    <li>
+                        <a href="javascript: void(null);">Uczeń</a>
+                        <ul>                            <li><a href="/uwagi">Uwagi</a></li>                            <li><a href="/uczen_wyniki_egzaminow">Wyniki egzaminów</a></li>                            <li><a href="/szczegolne_osiagniecia_ucznia">Szczególne osiągnięcia</a></li>                            <li><a href="/informacja">Informacje</a></li>                        </ul>
+                    </li>                    <li>
+                        <a href="javascript: void(null);">Organizacja</a>
+                        <ul>
+                            <li><a href="javascript:otworz_w_nowym_oknie('/przegladaj_plan_lekcji','plan_u',0,0)">Plan lekcji</a></li>
+                            <li><a href="/dyzury">Dyżury</a></li>                            <li><a href="/zrealizowane_lekcje">Lekcje</a></li>                            <li><a href="/zaplanowane_lekcje">Zaplanowane lekcje</a></li>                            <li><a href="/pliki_szkoly">Pliki&nbsp;szkoły</a></li>                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>    <div id="top-banner-container">
+        <a href="/uczen/index             "             >
+            <img id="top-banner" src="/assets/img/synergia/header/benners/default.png         " />
+        </a>        <div id="graphic-menu">
+            <ul><li><a href="/indywidualni" id="icon-indywidualni"><span class="circle"></span>indywidualni</a></li>                    <li><a          href="/przegladaj_oceny/uczen" id="icon-oceny"><span class="circle"></span>Oceny</a>
+                    </li>
+                    <li>
+                        <a          href="/przegladaj_nb/uczen" id="icon-nb">
+                            <span class="circle"></span>Frekwencja
+                        </a>
+                    </li>
+                <li><a  title="Liczba nieprzeczytanych wiadomości: 60"         href="/wiadomosci             "         id="icon-wiadomosci"><span class="circle"></span>Wiadomości</a>                    <a class="button counter">60         </a>
+                <li><a          href="/ogloszenia" id="icon-ogloszenia"><span class="circle"></span>Ogłoszenia</a>                        </li>
+                <li><a          href="/terminarz" id="icon-terminarz"><span class="circle"></span>Terminarz</a>                            </li>
+                    <li><a          href="/moje_zadania" id="icon-zadania"><span class="circle"></span>Zadania domowe</a>                    </li>
+            </ul>
+        </div>    </div>
+    <div id="user-section">
+szczęśliwy numerek: <a href="javascript:void(0);" title="Szczęśliwy numerek to losowany każdego dnia numer z dziennika. Wylosowana liczba ma różne zastosowania, np. uczeń z określonym numerem może być zwolniony z odpowiedzi ustnych w danym dniu. Zapytaj  w szkole o możliwość bezpłatnego włączenia usługi Szczęśliwego Numerka."><span class="luckyNumber" alt="Szczęśliwy numerek to losowany każdego dnia numer z dziennika. Wylosowana liczba ma różne zastosowania, np. uczeń z określonym numerem może być zwolniony z odpowiedzi ustnych w danym dniu. Zapytaj  w szkole o możliwość bezpłatnego włączenia usługi Szczęśliwego Numerka.">&nbsp;<b>?</b>&nbsp;</span></a> &nbsp;&nbsp; <span class="tooltip" title="&lt;b&gt;ostatnie udane logowania:&lt;/b&gt;&lt;br /&gt;2020-04-13 20:39:02, IP: 89.75.91.140&lt;br /&gt;2020-04-13 20:39:01, IP: 89.75.91.140&lt;br /&gt;2020-04-13 20:37:14, IP: 89.75.91.140&lt;br /&gt;2020-04-13 20:37:14, IP: 89.75.91.140&lt;br /&gt;2020-04-13 20:30:23, IP: 81.190.49.73&lt;br /&gt;&lt;b&gt;ostatnie nieudane logowania:&lt;/b&gt;&lt;br /&gt;2020-04-13 17:27:46, IP: 81.190.49.73&lt;br /&gt;2020-04-12 13:14:17, IP: 81.190.49.73&lt;br /&gt;2020-04-11 16:13:20, IP: 81.190.49.73&lt;br /&gt;2020-04-11 12:31:35, IP: 81.190.49.73&lt;br /&gt;2020-04-09 19:46:25, IP: 81.190.49.73&lt;br /&gt;">historia logowań </span>&nbsp;<img class="tooltip helper-icon" alt="&lt;b&gt;ostatnie udane logowania:&lt;/b&gt;&lt;br /&gt;2020-04-13 20:39:02, IP: 89.75.91.140&lt;br /&gt;2020-04-13 20:39:01, IP: 89.75.91.140&lt;br /&gt;2020-04-13 20:37:14, IP: 89.75.91.140&lt;br /&gt;2020-04-13 20:37:14, IP: 89.75.91.140&lt;br /&gt;2020-04-13 20:30:23, IP: 81.190.49.73&lt;br /&gt;&lt;b&gt;ostatnie nieudane logowania:&lt;/b&gt;&lt;br /&gt;2020-04-13 17:27:46, IP: 81.190.49.73&lt;br /&gt;2020-04-12 13:14:17, IP: 81.190.49.73&lt;br /&gt;2020-04-11 16:13:20, IP: 81.190.49.73&lt;br /&gt;2020-04-11 12:31:35, IP: 81.190.49.73&lt;br /&gt;2020-04-09 19:46:25, IP: 81.190.49.73&lt;br /&gt;" title="&lt;b&gt;ostatnie udane logowania:&lt;/b&gt;&lt;br /&gt;2020-04-13 20:39:02, IP: 89.75.91.140&lt;br /&gt;2020-04-13 20:39:01, IP: 89.75.91.140&lt;br /&gt;2020-04-13 20:37:14, IP: 89.75.91.140&lt;br /&gt;2020-04-13 20:37:14, IP: 89.75.91.140&lt;br /&gt;2020-04-13 20:30:23, IP: 81.190.49.73&lt;br /&gt;&lt;b&gt;ostatnie nieudane logowania:&lt;/b&gt;&lt;br /&gt;2020-04-13 17:27:46, IP: 81.190.49.73&lt;br /&gt;2020-04-12 13:14:17, IP: 81.190.49.73&lt;br /&gt;2020-04-11 16:13:20, IP: 81.190.49.73&lt;br /&gt;2020-04-11 12:31:35, IP: 81.190.49.73&lt;br /&gt;2020-04-09 19:46:25, IP: 81.190.49.73&lt;br /&gt;" src="/images/pomoc_ciemna.png" />&nbsp; | jesteś zalogowany jako: <b>
+Adam Pachur&nbsp;(uczeń&nbsp;<img class="tooltip helper-icon" alt="Jeśli nie jesteś uczniem, to powinieneś zalogować się na konto z loginem bez literki &quot;u&quot;" title="Jeśli nie jesteś uczniem, to powinieneś zalogować się na konto z loginem bez literki &quot;u&quot;" src="/images/pomoc_ciemna.png" />&nbsp;)</b>    </div>
+</div>
+
+<script type="text/javascript">
+    function zapiszPaddingStrony( padding ) {
+        $.ajax({
+            type: "POST",
+            url: '/ajax/setPagePadding.php',
+            data: 'enlarge='+padding,
+            success: function() {
+            },
+            error: function() {
+            }
+          });
+    }
+        $(document).ready(function() {
+        if( window.width <= 1024 ) {
+            zapiszPaddingStrony(1);
+            $("#body").css("padding-left","0");
+            $("#body").css("padding-right","0");
+        }
+    });
+        </script>
+<div id="left-widgets-container">
+    </div>
+<div id="body"  >
+<script type="text/javascript" src="/js/wiadomosci.1495831305.js"></script><FORM ACTION="/wiadomosci" NAME="formWiadomosci" ID="formWiadomosci" enctype="multipart/form-data" METHOD="POST">    
+    <input 
+        type="hidden" 
+        name="requestkey" 
+        value="MC4wMjY3MjMwMCAxNTg2ODAzMTQzX2IzOWE2NWU5YzlhYTFmZDY2NWY5YWQ2NGNkZjJlYTZl" 
+    />
+
+                    <input type="hidden" name="filtrUzytkownikow" id="filtrUzytkownikow" value="0" />
+                <input type="hidden" name="idPojemnika" value="105" />
+            <div class="container ">
+		<h2 class="inside"> Wiadomości </h2><div class="container-background">
+		<table class="stretch container-message">
+			<tr>
+			<td class="message-folders">
+        <table class="message-folders-options">
+						<tr>
+							<td><a id="wiadomosci-napisz" class="button left blue" href="/wiadomosci/2/5">
+                        <span class="button-start">Napisz</span><span class="button-end"></span>
+                     </a>				</td>
+						</tr>
+					</table>	<table class="message-folders">
+		<tr>
+			<td class="tree-first-branch">&nbsp;</td>
+			<td style="font-weight: bold" >
+				<a class="selected" href="/wiadomosci/5" >odebrane (60)</a>
+			</td>
+		</tr>
+            <tr>
+                <td class="tree-next-branch">&nbsp;</td>
+                <td >
+                    <a class="" href="/wiadomosci/6">wysłane</a>
+                </td>
+            </tr>
+		<tr>
+			<td class="tree-next-branch">&nbsp;</td>
+			<td >
+				<a class="" href="/wiadomosci/7">kosz</a>
+			</td>
+		</tr>
+                <tr>
+                    <td class="tree-last-branch">&nbsp;</td>
+                    <td>
+                        <a href="/wiadomosci_archiwum">Archiwum</a>
+                    </td>
+                </tr></table><hr class="message-block-separator">
+		<table class="stretch message-folders-options"><tr><td><input type="BUTTON" value="Dodaj" class="small"  onClick="otworz_w_nowym_oknie('/wiadomosci/etykiety','o1',700,400)"></td></tr></table>
+		<table class="message-labels">
+		<tr>
+			<td class="space-holder">&nbsp;</td>
+			<td colspan="3"><b>Etykiety</b></td>
+		</tr>
+		</table></td><td><table class="stretch message-button-panel"><tr><td  style="vertical-align: middle; text-align: left;   white-space: nowrap;  ">
+	<INPUT TYPE="button" VALUE="Usuń zaznaczone"
+                NAME="usun_zaznaczone" TABINDEX="3" CLASS="medium left" 
+                onclick="usunListeWiadomosci(5, 0, 0)"
+                ><select name="opcja_zaznaczone_g" class="big left" onChange='if(this.value=="drukujWiadomosci") {document.forms[0].action="/wiadomosci/wydruk_wiadomosci.pdf"; document.forms[0].target="_blank"; document.forms[0].submit(); document.forms[0].target="_self"; document.forms[0].action=&quot;\/wiadomosci&quot;; this.selectedIndex=0;} else {this.form.submit();}' ><option value="0" >Więcej poleceń...</option><optgroup label="Inne:"><option value="drukujWiadomosci" >Drukuj</option></select>
+	</td><td  style="vertical-align: middle; text-align: right;   ">
+	Pokaż tylko wiadomości otrzymane od nadawcy
+	</td><td class="big" style="vertical-align: middle; text-align: left;   ">
+	<select name="filtr_uzytkownikow" class="big left" onChange="this.form.action='/wiadomosci/5'; this.form.submit()"><option value="-">Wszyscy użytkownicy</option><option  value="1181558">Szumielewicz Michał [Administrator szkoły]  </option><option  value="1209593">Blicharz- Kuflińska Justyna [Nauczyciel]  </option><option  value="1193749">Butkiewicz Elżbieta [Nauczyciel]  </option><option  value="1209568">Endraszka Ewa [Nauczyciel]  </option><option  value="2541825">Grubba Dorota [Nauczyciel]  </option><option  value="3175019">Kasprzak Dorota [Dyrektor Szkoły]  </option><option  value="1193748">Danuta Klapper-Szcucka [Dyrektor Szkoły]  </option><option  value="1209574">Łańcucka Jadwiga [Nauczyciel]  </option><option  value="1508425">Małyszko Zdzisława [Nauczyciel]  </option><option  value="1209592">Mostowik Jolanta [Nauczyciel]  </option><option  value="2284810">Naleźny Maria [Nauczyciel]  </option><option  value="1209588">Pepliński Paweł [Nauczyciel]  </option><option  value="2720370">Powązka Mateusz [Nauczyciel]  </option><option  value="1209575">Sokołowska Beata [Nauczyciel]  </option><option  value="1209596">Szeler Elżbieta [Nauczyciel]  </option><option  value="1199175">Szumielewicz Michał [Nauczyciel]  </option><option  value="1508979">Szymichowska Irena   </option><option  value="1209598">Szymichowska Irena [Nauczyciel]  </option><option  value="1209591">usunięty użytkownik [Nauczyciel]  </option><option  value="1209571">Wójcikiewicz Justyna [Nauczyciel]  </option><option  value="1209580">Wyka- Cichocka Małgorzata [Nauczyciel]  </option></select>
+	</td></tr></table><table class="decorated stretch" style="margin: 5px 0px;">
+<thead><tr><td class="micro">
+    
+        <input name="zaznacz_wszystkie"
+            id="wiadomosciListaWszystkie"
+            type="checkbox" 
+            onClick="zaznaczWszystkieWiadomosci()"
+        >
+    </td>
+    <td class="micro">&nbsp;</td>
+
+            <input type="hidden" name="sortujTabele[tabeleKolumna]" id="sortujTabeleKolumna"
+                value="3"
+            />
+            <input type="hidden" name="sortujTabele[tabeleKierunek]" id="sortujTabeleKierunek"
+                value="1"
+            />
+            <input type="hidden" name="sortujTabele[tabelePojemnik]" id="sortujTabelePojemnik"
+                value="105"
+            />
+        <td>
+                <a href="javascript:void(0);" 
+                    onClick="sendSortTable(1, 0)">Nadawca</a>
+                &nbsp;<input type="hidden" name="sortowanie[105][0]" value=""></td><td>
+                <a href="javascript:void(0);" 
+                    onClick="sendSortTable(2, 0)">Temat</a>
+                &nbsp;<input type="hidden" name="sortowanie[105][1]" value=""></td><td>
+                <a href="javascript:void(0);" 
+                    onClick="sendSortTable(3, 0)">Wysłano</a>
+                &nbsp;[&uarr;]<input type="hidden" name="sortowanie[105][2]" value=""></td><td class="micro">&nbsp;</td>
+    </thead>
+    <tbody>
+<tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="10094671" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Klapper- Szczucka Danuta (Danuta Klapper-Szcucka) </td><td   > <a href="/wiadomosci/1/5/10094671/f0">NAUCZANIE NA ODLEGŁOŚĆ</a></td> <td class="medium center"  >2020-04-09 19:17:25</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(10094671, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="10087475" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   style="font-weight: bold;"  >Szeler Elżbieta (Szeler Elżbieta) </td><td   style="font-weight: bold;"  > <a href="/wiadomosci/1/5/10087475/f0">zestaw 9 z zad 10-15</a></td> <td class="medium center"  style="font-weight: bold;"  >2020-04-09 16:30:09</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(10087475, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="9952707" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Łańcucka Jadwiga (Łańcucka Jadwiga) </td><td   > <a href="/wiadomosci/1/5/9952707/f0">Zdalnie</a></td> <td class="medium center"  >2020-04-08 12:10:41</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(9952707, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="9874295" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   style="font-weight: bold;"  >Powązka Mateusz (Powązka Mateusz) </td><td   style="font-weight: bold;"  > <a href="/wiadomosci/1/5/9874295/f0">WF 3D 08.04</a></td> <td class="medium center"  style="font-weight: bold;"  >2020-04-08 08:03:40</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(9874295, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="9536191" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   style="font-weight: bold;"  >Szymichowska Irena (Szymichowska Irena) </td><td   style="font-weight: bold;"  > <a href="/wiadomosci/1/5/9536191/f0">Pomoc psychologa, pedagoga</a></td> <td class="medium center"  style="font-weight: bold;"  >2020-04-06 11:30:17</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(9536191, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="9527687" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Naleźny Maria (Naleźny Maria) </td><td   > <a href="/wiadomosci/1/5/9527687/f0">Fizyka -online</a></td> <td class="medium center"  >2020-04-06 11:09:13</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(9527687, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="9499689" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   style="font-weight: bold;"  >Szeler Elżbieta (Szeler Elżbieta) </td><td   style="font-weight: bold;"  > <a href="/wiadomosci/1/5/9499689/f0">zestaw 9</a></td> <td class="medium center"  style="font-weight: bold;"  >2020-04-06 09:57:24</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(9499689, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="9479104" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   style="font-weight: bold;"  >Szumielewicz Michał (Szumielewicz Michał) </td><td   style="font-weight: bold;"  > <a href="/wiadomosci/1/5/9479104/f0">próbna matura CKE z informatyki</a></td> <td class="medium center"  style="font-weight: bold;"  >2020-04-06 08:58:04</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(9479104, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="9403385" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   style="font-weight: bold;"  >Szeler Elżbieta (Szeler Elżbieta) </td><td   style="font-weight: bold;"  > <a href="/wiadomosci/1/5/9403385/f0">zestaw 8 rozwiązania</a></td> <td class="medium center"  style="font-weight: bold;"  >2020-04-05 09:24:55</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(9403385, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="9344434" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Łańcucka Jadwiga (Łańcucka Jadwiga) </td><td   > <a href="/wiadomosci/1/5/9344434/f0">Oceny</a></td> <td class="medium center"  >2020-04-03 17:56:26</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(9344434, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="9342586" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Szeler Elżbieta (Szeler Elżbieta) </td><td   > <a href="/wiadomosci/1/5/9342586/f0">rozwiązania próbnej matury poziom rozszerzony</a></td> <td class="medium center"  >2020-04-03 17:42:28</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(9342586, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="9339597" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   style="font-weight: bold;"  >Szeler Elżbieta (Szeler Elżbieta) </td><td   style="font-weight: bold;"  > <a href="/wiadomosci/1/5/9339597/f0">rozwiązania próbnej matury poziom podstawowy</a></td> <td class="medium center"  style="font-weight: bold;"  >2020-04-03 17:19:08</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(9339597, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="9300261" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   style="font-weight: bold;"  >Szeler Elżbieta (Szeler Elżbieta) </td><td   style="font-weight: bold;"  > <a href="/wiadomosci/1/5/9300261/f0">próbna matura poziom rozszerzony</a></td> <td class="medium center"  style="font-weight: bold;"  >2020-04-03 13:42:25</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(9300261, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="9270025" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   style="font-weight: bold;"  >Szeler Elżbieta (Szeler Elżbieta) </td><td   style="font-weight: bold;"  > <a href="/wiadomosci/1/5/9270025/f0">próbna matura z matematyki poziom rozszerzony</a></td> <td class="medium center"  style="font-weight: bold;"  >2020-04-03 12:04:48</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(9270025, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="9210343" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Szeler Elżbieta (Szeler Elżbieta) </td><td   > <a href="/wiadomosci/1/5/9210343/f0">próbna matura poziom podstawowy</a></td> <td class="medium center"  >2020-04-03 09:00:20</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(9210343, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="9197436" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   style="font-weight: bold;"  >Szeler Elżbieta (Szeler Elżbieta) </td><td   style="font-weight: bold;"  > <a href="/wiadomosci/1/5/9197436/f0">matura próbna z matematyki</a></td> <td class="medium center"  style="font-weight: bold;"  >2020-04-03 08:00:13</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(9197436, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="9191570" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   style="font-weight: bold;"  >Grubba Dorota (Grubba Dorota) </td><td   style="font-weight: bold;"  > <a href="/wiadomosci/1/5/9191570/f0">12 słynnych muzeów na świecie oferuje wirtualne spacery : )</a></td> <td class="medium center"  style="font-weight: bold;"  >2020-04-03 00:24:54</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(9191570, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="9039180" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Szeler Elżbieta (Szeler Elżbieta) </td><td   > <a href="/wiadomosci/1/5/9039180/f0">punkty za przesłane zestawy</a></td> <td class="medium center"  >2020-04-02 11:02:23</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(9039180, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="8953113" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Sokołowska Beata (Sokołowska Beata) </td><td   > <a href="/wiadomosci/1/5/8953113/f0">Fwd: matura próbna z języka angielskiego</a></td> <td class="medium center"  >2020-04-01 19:50:25</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(8953113, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="8947300" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Klapper- Szczucka Danuta (Danuta Klapper-Szcucka) </td><td   > <a href="/wiadomosci/1/5/8947300/f0">PRÓBA MATURALNA - OGŁOSZENIE</a></td> <td class="medium center"  >2020-04-01 19:15:56</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(8947300, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="8942108" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Blicharz- Kuflińska Justyna (Blicharz- Kuflińska Justyna) </td><td   > <a href="/wiadomosci/1/5/8942108/f0">2.04.- próba maturalna z j.polskiego</a></td> <td class="medium center"  >2020-04-01 18:41:03</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(8942108, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="8917898" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Szeler Elżbieta (Szeler Elżbieta) </td><td   > <a href="/wiadomosci/1/5/8917898/f0">próbna matura poziom rozszerzony</a></td> <td class="medium center"  >2020-04-01 16:23:48</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(8917898, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="8917142" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   style="font-weight: bold;"  >Szeler Elżbieta (Szeler Elżbieta) </td><td   style="font-weight: bold;"  > <a href="/wiadomosci/1/5/8917142/f0">próbna matura poziom podstawowy</a></td> <td class="medium center"  style="font-weight: bold;"  >2020-04-01 16:20:01</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(8917142, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="8914227" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   style="font-weight: bold;"  >Naleźny Maria (Naleźny Maria) </td><td   style="font-weight: bold;"  > <a href="/wiadomosci/1/5/8914227/f0">Matura  próbna - fizyka 2.04.2020 godz.14.00</a></td> <td class="medium center"  style="font-weight: bold;"  >2020-04-01 16:04:50</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(8914227, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="8849583" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Łańcucka Jadwiga (Łańcucka Jadwiga) </td><td   > <a href="/wiadomosci/1/5/8849583/f0">zdalnie3d</a></td> <td class="medium center"  >2020-04-01 12:16:31</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(8849583, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="8766313" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Powązka Mateusz (Powązka Mateusz) </td><td   > <a href="/wiadomosci/1/5/8766313/f0">WF 01.04 3D</a></td> <td class="medium center"  >2020-04-01 07:56:50</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(8766313, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="8711220" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Naleźny Maria (Naleźny Maria) </td><td   > <a href="/wiadomosci/1/5/8711220/f0">Fizyka -online</a></td> <td class="medium center"  >2020-03-31 18:07:56</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(8711220, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="8655485" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Szeler Elżbieta (Szeler Elżbieta) </td><td   > <a href="/wiadomosci/1/5/8655485/f0">Wynik zestawu 6</a></td> <td class="medium center"  >2020-03-31 14:00:46</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(8655485, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="8633678" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Łańcucka Jadwiga (Łańcucka Jadwiga) </td><td   > <a href="/wiadomosci/1/5/8633678/f0">zdalnie3d</a></td> <td class="medium center"  >2020-03-31 12:53:08</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(8633678, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="8600440" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Małyszko Zdzisława (Małyszko Zdzisława) </td><td   > <a href="/wiadomosci/1/5/8600440/f0">Pomoc w nauce</a></td> <td class="medium center"  >2020-03-31 11:24:23</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(8600440, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="8376812" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Klapper- Szczucka Danuta (Danuta Klapper-Szcucka) </td><td   > <a href="/wiadomosci/1/5/8376812/f0">WYGRANA W KONKURSIE</a></td> <td class="medium center"  >2020-03-30 12:38:00</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(8376812, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="8331655" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Klapper- Szczucka Danuta (Danuta Klapper-Szcucka) </td><td   > <a href="/wiadomosci/1/5/8331655/f0">PRÓBA MATURALNA Z CKE</a></td> <td class="medium center"  >2020-03-30 10:55:35</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(8331655, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="8147022" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   style="font-weight: bold;"  >Szeler Elżbieta (Szeler Elżbieta) </td><td   style="font-weight: bold;"  > <a href="/wiadomosci/1/5/8147022/f0">zestaw 7 odp</a></td> <td class="medium center"  style="font-weight: bold;"  >2020-03-28 08:53:47</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(8147022, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="8128993" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Szeler Elżbieta (Szeler Elżbieta) </td><td   > <a href="/wiadomosci/1/5/8128993/f0">obecność</a></td> <td class="medium center"  >2020-03-27 20:13:24</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(8128993, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="7969479" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Blicharz- Kuflińska Justyna (Blicharz- Kuflińska Justyna) </td><td   > <a href="/wiadomosci/1/5/7969479/f0">rozprawki- ocenianie</a></td> <td class="medium center"  >2020-03-27 10:07:09</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(7969479, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="7942273" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Powązka Mateusz (Powązka Mateusz) </td><td   > <a href="/wiadomosci/1/5/7942273/f0">ZDALNY WF - zasady oceniania i frekwencji</a></td> <td class="medium center"  >2020-03-27 08:57:45</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(7942273, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="7812103" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Naleźny Maria (Naleźny Maria) </td><td   > <a href="/wiadomosci/1/5/7812103/f0">Fizyka Matura próbna CKE - 2.04.2020 godz. 14.00</a></td> <td class="medium center"  >2020-03-26 14:57:47</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(7812103, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="7799219" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Szeler Elżbieta (Szeler Elżbieta) </td><td   > <a href="/wiadomosci/1/5/7799219/f0">powoli do klasyfikacji</a></td> <td class="medium center"  >2020-03-26 14:19:04</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(7799219, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="7780260" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Łańcucka Jadwiga (Łańcucka Jadwiga) </td><td   > <a href="/wiadomosci/1/5/7780260/f0">Obecnosci</a></td> <td class="medium center"  >2020-03-26 13:26:27</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(7780260, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="7666679" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Naleźny Maria (Naleźny Maria) </td><td   > <a href="/wiadomosci/1/5/7666679/f0">Fizyka-  online</a></td> <td class="medium center"  >2020-03-26 09:03:12</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(7666679, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="7414776" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Szymichowska Irena (Szymichowska Irena) </td><td   > <a href="/wiadomosci/1/5/7414776/f0">KORONAWIRUS: Jak skutecznie uczyć się w domu? webinar dla młodzieży</a></td> <td class="medium center"  >2020-03-25 08:55:20</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(7414776, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="7316299" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Blicharz- Kuflińska Justyna (Blicharz- Kuflińska Justyna) </td><td   > <a href="/wiadomosci/1/5/7316299/f0">Zdążyć przed Panem Bogiem- zagadnienia</a></td> <td class="medium center"  >2020-03-24 17:05:44</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(7316299, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="7230353" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Szymichowska Irena (Szymichowska Irena) </td><td   > <a href="/wiadomosci/1/5/7230353/f0">Materiały pomocnicze</a></td> <td class="medium center"  >2020-03-24 11:43:42</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(7230353, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="7169545" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Szeler Elżbieta (Szeler Elżbieta) </td><td   > <a href="/wiadomosci/1/5/7169545/f0">zestaw 6 odpowiedzi</a></td> <td class="medium center"  >2020-03-24 07:50:25</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(7169545, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="7167652" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   style="font-weight: bold;"  >Wyka- Cichocka Małgorzata (Wyka- Cichocka Małgorzata) </td><td   style="font-weight: bold;"  > <a href="/wiadomosci/1/5/7167652/f0">Tuesday 24th of March</a></td> <td class="medium center"  style="font-weight: bold;"  >2020-03-24 07:15:51</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(7167652, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="7139946" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Szumielewicz Michał (Szumielewicz Michał) </td><td   > <a href="/wiadomosci/1/5/7139946/f0">dostęp do platformy</a></td> <td class="medium center"  >2020-03-23 20:13:39</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(7139946, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="7117477" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Szymichowska Irena (Szymichowska Irena) </td><td   > <a href="/wiadomosci/1/5/7117477/f0">Wychowanie do życia w rodzinie</a></td> <td class="medium center"  >2020-03-23 18:23:08</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(7117477, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="7106274" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Blicharz- Kuflińska Justyna (Blicharz- Kuflińska Justyna) </td><td   > <a href="/wiadomosci/1/5/7106274/f0">Pracy ciąg dalszy...</a></td> <td class="medium center"  >2020-03-23 17:30:16</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(7106274, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line0">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="7078366" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Klapper- Szczucka Danuta (Danuta Klapper-Szcucka) </td><td   > <a href="/wiadomosci/1/5/7078366/f0">Obowiązek nauczania na odległość.</a></td> <td class="medium center"  >2020-03-23 15:23:08</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(7078366, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr><tr class="line1">
+        <td class="micro center">
+        
+    <input class="wiadomoscLista"
+        type="checkbox"
+        value="7025681" 
+        name="wiadomosci[]" 
+        onClick="$('#wiadomosciListaWszystkie').prop('checked', false); "
+    >
+    
+        </td>                    <td class="micro center">
+                            
+                    </td>
+            <td   >Powązka Mateusz (Powązka Mateusz) </td><td   > <a href="/wiadomosci/1/5/7025681/f0">SPRAWDZIAN :) WF edukacja zdrowotna PROGRAM ZNAMIĘ-ZNAM JE! -...</a></td> <td class="medium center"  >2020-03-23 12:13:34</td><td class="micro center">
+    <a href='javascript:void(0); return false;' 
+    onClick='usunWiadomosc(7025681, 5, 0, "", 0);' 
+        title="Usuń"
+        ><img src="/images/usun_kosz.png" />
+        </a></td></tr>
+</tbody>
+<tfoot><tr><td colspan="6">&nbsp;</td></tr></tfoot>
+</table><table class="stretch message-button-panel"><tr><td  style="vertical-align: middle; text-align: left;   white-space: nowrap;  ">
+	<INPUT TYPE="button" VALUE="Usuń zaznaczone"
+                NAME="usun_zaznaczone" TABINDEX="3" CLASS="medium left" 
+                onclick="usunListeWiadomosci(5, 0, 0)"
+                ><select name="opcja_zaznaczone_d" class="big left" onChange='if(this.value=="drukujWiadomosci") {document.forms[0].action="/wiadomosci/wydruk_wiadomosci.pdf"; document.forms[0].target="_blank"; document.forms[0].submit(); document.forms[0].target="_self"; document.forms[0].action=&quot;\/wiadomosci&quot;; this.selectedIndex=0;} else {this.form.submit();}' ><option value="0" >Więcej poleceń...</option><optgroup label="Inne:"><option value="drukujWiadomosci" >Drukuj</option></select>
+	</td></tr></table><div class="pagination"><hr></hr>
+            <span>Strona&nbsp;1&nbsp;z&nbsp;3</span><ul><li class="active">&nbsp;1&nbsp;</li><li><a href="javascript:void(null)"
+				onClick="document.getElementById('numer_strony105').value=1; document.getElementById('numer_strony105').form.submit();"
+				>2</a></li><li><a href="javascript:void(null)"
+				onClick="document.getElementById('numer_strony105').value=2; document.getElementById('numer_strony105').form.submit();"
+				>3</a></li><li class="jump"><a href="javascript:void(null)"
+			onClick="document.getElementById('numer_strony105').value=1; document.getElementById('numer_strony105').form.submit();"
+			>Następna&nbsp;&gt;</a></li><li class="jump"><a href="javascript:void(null)"
+			onClick="document.getElementById('numer_strony105').value=2; document.getElementById('numer_strony105').form.submit();">&gt;&gt;</a></li></ul></div><input type="HIDDEN" name="numer_strony105" id="numer_strony105" value="0"><input type="HIDDEN" name="porcjowanie_pojemnik105" value="105"><input type="HIDDEN" name="poprzednia" value="5"></td></tr></table></div></div></form>        </div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        if( $('#body.have-interface').find(".container.static").length > 0 ) {
+            $('#body').css("padding-left", $('#body').css("padding-right") );
+        }
+        $('#body.have-interface').removeClass("have-interface");
+      });
+  </script>
+        <script type="text/javascript" src="/js/cookieBox.js"></script>
+    <div id="cookieBox" class="cookieBox" style="display: none;">
+        <div id="cookieBoxClose" class="cookieBoxClose"><a href="javascript: void(null);">x</a></div>
+        <p>
+            Ta strona wykorzystuje pliki cookies. Za ich pomocą zbierane są informacje, które mogą stanowić dane osobowe. Wykorzystujemy je m.in. w celach statystycznych i funkcjonalnych. Korzystając z serwisu bez zmiany konfiguracji przeglądarki, wyrażasz zgodę na zapisanie plików cookies w pamięci Twojego urządzenia. Możesz samodzielnie zarządzać cookies zmieniając odpowiednio ustawienia w Twojej przeglądarce. Więcej informacji o zasadach przetwarzania Twoich danych osobowych oraz przysługujących Ci prawach znajdziesz w <a href="https://synergia.librus.pl/polityka-prywatnosci/" target="_blank" rel="noreferrer noopener">Polityce prywatności</a>.
+        </p>
+    </div>
+        <div id="footer">
+              <hr></hr>
+                <span id="bottom-logo"></span>
+                </div>
+  </div>
+        </body>
+    </html>
+  

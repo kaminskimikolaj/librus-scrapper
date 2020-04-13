@@ -31,3 +31,8 @@ curl -H 'Connection: close' -H 'Referer: https://api.librus.pl/OAuth/Authorizati
 
 10.
 curl -H 'Connection: close' 'https://synergia.librus.pl/uczen/index' -H 'Referer: https://portal.librus.pl/rodzina/synergia/loguj' --cookie-jar cookie.txt --cookie cookie.txt -v -x "localhost:9090"
+
+11.
+curl 'https://synergia.librus.pl/uczen/index' \
+-H 'Referer: https://portal.librus.pl/rodzina/synergia/loguj' \
+-x "localhost:9090"

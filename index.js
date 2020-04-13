@@ -1,5 +1,6 @@
 const cheerio = require('cheerio');
 var rp = require('request-promise');
+var request = require('request')
 rp = rp.defaults({
   jar: true,
   // proxy: "http://localhost:9090",
@@ -96,9 +97,14 @@ let options = [
       'Referer': 'https://portal.librus.pl/rodzina/synergia/loguj'
     }
   },
+
+  {
+    url: 'https://synergia.librus.pl/wiadomosci',
+    headers: {
+      'Referer': 'https://synergia.librus.pl/uczen/index'
+    }
+  }
 ];
-
-
 
 (async()=>{
   await rp(options[0])
@@ -137,8 +143,10 @@ let options = [
   await rp(options[8])
   console.log("Ningh request commpleted")
 
-  // let res = await rp(options[9])
   await rp(options[9])
   console.log("Tenth request completed, login process successful!")
-  // console.log(res)
+
+  messagesResponseHtml = await rp(options[10])
+  console.log("Eleventh request completed")
+  let $ = cheerio.load(messagesResponseHtml)
 })()

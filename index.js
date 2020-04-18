@@ -1,11 +1,11 @@
 const cheerio = require('cheerio');
-var rp = require('request-promise');
-var request = require('request')
-rp = rp.defaults({
+const parser = require("./cheerio.js");
+
+var rp = require('request-promise').defaults({
   jar: true,
-  // proxy: "http://localhost:9090",
+  proxy: "http://localhost:9090",
   simple: false,
-  // rejectUnauthorized: false,
+  rejectUnauthorized: false,
   // forever: true,
   followRedirect: false,
   agent: false })
@@ -98,10 +98,20 @@ let options = [
     }
   },
 
+  //11
   {
     url: 'https://synergia.librus.pl/wiadomosci',
     headers: {
       'Referer': 'https://synergia.librus.pl/uczen/index'
+    }
+  },
+
+  //12
+
+  {
+    url: 'https://synergia.librus.pl',
+    headers: {
+      'Referer': 'https://synergia.librus.pl/wiadomosci'
     }
   }
 ];
@@ -148,8 +158,16 @@ let options = [
 
   messagesResponseHtml = await rp(options[10])
   console.log("Eleventh request completed")
-  $ = cheerio.load(messagesResponseHtml)
-  $(".decorated.stretch > tbody > tr > td:nth-child(3)").each((i, elem) => {
-    console.log($(this).attr("style"))
-  })
+  let list = parser.parse(messagesResponseHtml)
+  // console.log(list)
+  let promises = []
+  list.forEach((item => {
+    const localOptions = {
+      url: options[11].url + item,
+      headers: options[11].headers,
+      followRedirect: true
+    }
+    promises.push(rp(localOptions))
+  }))
+  Promise.all(promises).then(() => { console.log("All messages read") })
 })()

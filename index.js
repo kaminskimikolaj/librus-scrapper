@@ -3,9 +3,9 @@ const parser = require("./cheerio.js");
 
 var rp = require('request-promise').defaults({
   jar: true,
-  proxy: "http://localhost:9090",
+  // proxy: "http://localhost:9090",
   simple: false,
-  rejectUnauthorized: false,
+  // rejectUnauthorized: false,
   // forever: true,
   followRedirect: false,
   agent: false })
